@@ -111,7 +111,7 @@ fb.plot([1.0], [26.0], marker="o", ms=6.0, mfc="white", mec=MUTED, mew=1.2, zord
 clean(fb)
 
 fig.subplots_adjust(wspace=0.30)
-save(fig, "04", "fig04-1")
+save(fig, "04", "fig04-01")
 
 
 # ============================================================
@@ -170,4 +170,4 @@ label(fb, 1.15, 41, "$t=1$ s", fs=8.6, color=MUTED, ha="left", va="center")
 clean(fb)
 
 fig.subplots_adjust(wspace=0.30)
-save(fig, "04", "fig04-2")
+save(fig, "04", "fig04-02")

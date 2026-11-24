@@ -140,6 +140,6 @@ clean(ax, grid=False, spines=("left", "bottom"))
 
 label(ax, 40, 4, "棕色方块：非零元 %d 个，占 %.1f%%" % (nnz, 100 * nnz / nd ** 2),
       fs=8.6, color=MUTED, ha="left", va="top")
-label(ax, 40, 14, "细线：带宽 $\pm17$ 的边界", fs=8.6, color=MUTED,
+label(ax, 40, 14, r"细线：带宽 $\pm17$ 的边界", fs=8.6, color=MUTED,
       ha="left", va="top")
 save(fig, "03", "fig03-02")
