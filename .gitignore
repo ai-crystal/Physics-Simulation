@@ -1,0 +1,9 @@
+# 私有：写作规范、大纲、论文库、原始素材、构建中间产物
+_private/
+# 构建中间产物
+books/.build/
+# 系统与编辑器
+Thumbs.db
+.DS_Store
+__pycache__/
+*.pyc

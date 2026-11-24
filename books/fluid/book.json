@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 5,
+  "title": "物理模拟技术·流体、烟火与水面",
+  "cover_title": "物理模拟技术",
+  "volume": "05",
+  "volume_name": "流体、烟火与水面",
+  "subtitle": "把连续介质装进格子",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-fluid.pdf",
+  "accent": "#14556E",
+  "accent2": "#B45309",
+  "cover_accent": "#8FC3D8",
+  "ice": "#A6D2E2",
+  "art": "logo12.png",
+  "art_back": "logo13.png",
+  "art_pos": "50% 50%",
+  "tag_line": "烟要飘，水要泼，火要亮。",
+  "cover_tag": "从纳维-斯托克斯到 FLIP<br>再到海面与爆炸",
+  "ticks": [
+    "NS 方程",
+    "投影",
+    "FLIP",
+    "白水"
+  ],
+  "back_title": "一帧烟、一池水、一片海<br>背后是同一组方程的不同脾气",
+  "back_lead": "流体是物理模拟里方法最杂的一块：网格法稳、粒子法活、混合法两头兼顾。这一册按方程逐项拆解，讲平流、投影、涡量、自由表面、SPH、FLIP/APIC、表面张力、燃烧与海洋谱，也讲它们各自会在哪里坏掉。",
+  "back_items": [
+    [
+      "第 2 章",
+      "纳维-斯托克斯逐项"
+    ],
+    [
+      "第 4 章",
+      "平流与耗散"
+    ],
+    [
+      "第 7 章",
+      "SPH 的核与压力"
+    ],
+    [
+      "第 8 章",
+      "FLIP 与 APIC"
+    ],
+    [
+      "第 11 章",
+      "海面、泡沫与白水"
+    ]
+  ],
+  "back_quote": "流体模拟没有万能解，只有针对某种流体调好的那一套。",
+  "toc_sections": true
+}

@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 2,
+  "title": "物理模拟技术·数学基础",
+  "cover_title": "物理模拟技术",
+  "volume": "02",
+  "volume_name": "数学基础",
+  "subtitle": "描述运动与变形的语言",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-math.pdf",
+  "accent": "#3A3A6E",
+  "accent2": "#A65B1E",
+  "cover_accent": "#B7B3E0",
+  "ice": "#C3C0E6",
+  "art": "logo6.png",
+  "art_back": "logo7.png",
+  "art_pos": "50% 50%",
+  "tag_line": "先把语言学会，再谈算法。",
+  "cover_tag": "从向量、张量到弱形式<br>一本可以边查边读的数学册",
+  "ticks": [
+    "向量",
+    "张量",
+    "变分",
+    "离散几何"
+  ],
+  "back_title": "物理模拟里出现的数学<br>和工科课本里的并不完全一样",
+  "back_lead": "它更关心离散后的矩阵长什么样、条件数有多大、能量会不会发散。这一册把散落在论文里的数学重新收拢：空间变换、应变与应力、时间积分、稀疏求解、约束优化、有限元弱形式与离散微分几何。",
+  "back_items": [
+    [
+      "第 3 章",
+      "应变、应力与守恒律"
+    ],
+    [
+      "第 5 章",
+      "偏微分方程与 CFL"
+    ],
+    [
+      "第 6 章",
+      "稀疏系统与多重网格"
+    ],
+    [
+      "第 9 章",
+      "有限元的弱形式"
+    ],
+    [
+      "第 12 章",
+      "浮点数与条件数"
+    ]
+  ],
+  "back_quote": "算不对，往往不是代码写错了，而是数学前提不成立。",
+  "toc_sections": true
+}

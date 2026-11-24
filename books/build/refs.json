@@ -1,0 +1,1219 @@
+[
+ {
+  "key": "harlow1964",
+  "title": "The Particle-in-Cell Computing Method for Fluid Dynamics",
+  "authors": [
+   "Francis H. Harlow"
+  ],
+  "venue": "Methods in Computational Physics",
+  "year": 1964,
+  "have": false
+ },
+ {
+  "key": "reeves1983",
+  "title": "Particle Systems - A Technique for Modeling a Class of Fuzzy Objects",
+  "authors": [
+   "William T. Reeves"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 1983,
+  "doi": "10.1145/357318.357320",
+  "have": false
+ },
+ {
+  "key": "fournier1986",
+  "title": "A Simple Model of Ocean Waves",
+  "authors": [
+   "Alain Fournier",
+   "William T. Reeves"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 1986,
+  "doi": "10.1145/15922.15894",
+  "have": false
+ },
+ {
+  "key": "brackbill1986",
+  "title": "FLIP: A Method for Adaptively Zoned, Particle-in-Cell Calculations of Fluid Flows in Two Dimensions",
+  "authors": [
+   "Jeremiah U. Brackbill",
+   "Hans M. Ruppel"
+  ],
+  "venue": "Journal of Computational Physics",
+  "year": 1986,
+  "doi": "10.1016/0021-9991(86)90091-4",
+  "have": false
+ },
+ {
+  "key": "terzopoulos1987",
+  "title": "Elastically Deformable Models",
+  "authors": [
+   "Demetri Terzopoulos",
+   "John Platt",
+   "Alan Barr",
+   "Kurt Fleischer"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 1987,
+  "doi": "10.1145/37401.37411",
+  "have": false
+ },
+ {
+  "key": "kass1990",
+  "title": "Rapid, Stable Fluid Dynamics for Computer Graphics",
+  "authors": [
+   "Michael Kass",
+   "Gavin Miller"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 1990,
+  "doi": "10.1145/97879.97884",
+  "have": false
+ },
+ {
+  "key": "baraff1994",
+  "title": "Fast Contact Force Computation for Nonpenetrating Rigid Bodies",
+  "authors": [
+   "David Baraff"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 1994,
+  "doi": "10.1145/192161.192168",
+  "have": false
+ },
+ {
+  "key": "provot1995",
+  "title": "Deformation Constraints in a Mass-Spring Model to Describe Rigid Cloth Behavior",
+  "authors": [
+   "Xavier Provot"
+  ],
+  "venue": "Graphics Interface",
+  "year": 1995,
+  "have": false
+ },
+ {
+  "key": "stewart1996",
+  "title": "An Implicit Time-Stepping Scheme for Rigid Body Dynamics with Inelastic Collisions and Coulomb Friction",
+  "authors": [
+   "David E. Stewart",
+   "Jeffrey C. Trinkle"
+  ],
+  "venue": "International Journal for Numerical Methods in Engineering",
+  "year": 1996,
+  "doi": "10.1002/(SICI)1097-0207(19960730)39:14<2673::AID-NME965>3.0.CO;2-2",
+  "have": false
+ },
+ {
+  "key": "foster1996",
+  "title": "Realistic Animation of Liquids",
+  "authors": [
+   "Nick Foster",
+   "Dimitris Metaxas"
+  ],
+  "venue": "Graphics Models and Image Processing",
+  "year": 1996,
+  "doi": "10.1006/gmip.1996.0029",
+  "have": false
+ },
+ {
+  "key": "anitescu1997",
+  "title": "Formulating Dynamic Multi-Rigid-Body Contact Problems with Friction as Solvable Linear Complementarity Problems",
+  "authors": [
+   "Mihai Anitescu",
+   "Florian A. Potra"
+  ],
+  "venue": "Nonlinear Dynamics",
+  "year": 1997,
+  "doi": "10.1023/A:1008292328909",
+  "have": false
+ },
+ {
+  "key": "baraff1998",
+  "title": "Large Steps in Cloth Simulation",
+  "authors": [
+   "David Baraff",
+   "Andrew Witkin"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 1998,
+  "doi": "10.1145/280814.280821",
+  "have": false
+ },
+ {
+  "key": "stam1999",
+  "title": "Stable Fluids",
+  "authors": [
+   "Jos Stam"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 1999,
+  "doi": "10.1145/311535.311548",
+  "have": false
+ },
+ {
+  "key": "obrien1999",
+  "title": "Graphical Modeling and Animation of Brittle Fracture",
+  "authors": [
+   "James F. O'Brien",
+   "Jessica K. Hodgins"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 1999,
+  "doi": "10.1145/311535.311550",
+  "have": false
+ },
+ {
+  "key": "fedkiw2001",
+  "title": "Visual Simulation of Smoke",
+  "authors": [
+   "Ronald Fedkiw",
+   "Jos Stam",
+   "Henrik W. Jensen"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 2001,
+  "doi": "10.1145/383259.383260",
+  "have": false
+ },
+ {
+  "key": "foster2001",
+  "title": "Practical Animation of Liquids",
+  "authors": [
+   "Nick Foster",
+   "Ronald Fedkiw"
+  ],
+  "venue": "SIGGRAPH",
+  "year": 2001,
+  "doi": "10.1145/383259.383261",
+  "have": false
+ },
+ {
+  "key": "tessendorf2001",
+  "title": "Simulating Ocean Water",
+  "authors": [
+   "Jerry Tessendorf"
+  ],
+  "venue": "SIGGRAPH Course Notes",
+  "year": 2001,
+  "have": false
+ },
+ {
+  "key": "enright2002",
+  "title": "Animation and Rendering of Complex Water Surfaces",
+  "authors": [
+   "Douglas Enright",
+   "Stephen Marschner",
+   "Ronald Fedkiw"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2002,
+  "doi": "10.1145/566654.566606",
+  "have": false
+ },
+ {
+  "key": "obrien2002",
+  "title": "Graphical Modeling and Animation of Ductile Fracture",
+  "authors": [
+   "James F. O'Brien",
+   "Adam W. Bargteil",
+   "Jessica K. Hodgins"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2002,
+  "doi": "10.1145/566654.566586",
+  "have": false
+ },
+ {
+  "key": "bridson2002",
+  "title": "Robust Treatment of Collisions, Contact and Friction for Cloth Animation",
+  "authors": [
+   "Robert Bridson",
+   "Ronald Fedkiw",
+   "John Anderson"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2002,
+  "doi": "10.1145/566654.566623",
+  "have": false
+ },
+ {
+  "key": "choi2002",
+  "title": "Stable but Responsive Cloth",
+  "authors": [
+   "Kwang-Jin Choi",
+   "Hyeong-Seok Ko"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2002,
+  "doi": "10.1145/566654.566622",
+  "have": false
+ },
+ {
+  "key": "muller2002",
+  "title": "Stable Real-Time Deformations",
+  "authors": [
+   "Matthias Müller",
+   "Julie Dorsey",
+   "Leonard McMillan",
+   "Robert Jagnow",
+   "Barbara Cutler"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2002,
+  "doi": "10.1145/545261.545269",
+  "have": false
+ },
+ {
+  "key": "james2002",
+  "title": "DyRT: Dynamic Response Textures for Real Time Deformation Simulation with Graphics Hardware",
+  "authors": [
+   "Doug L. James",
+   "Dinesh K. Pai"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2002,
+  "doi": "10.1145/566654.566621",
+  "have": false
+ },
+ {
+  "key": "grinspun2003",
+  "title": "Discrete Shells",
+  "authors": [
+   "Eitan Grinspun",
+   "Anil N. Hirani",
+   "Mathieu Desbrun",
+   "Peter Schröder"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2003,
+  "doi": "10.2312/SCA03/062-067",
+  "have": false
+ },
+ {
+  "key": "bridson2003",
+  "title": "Simulation of Clothing with Folds and Wrinkles",
+  "authors": [
+   "Robert Bridson",
+   "Sebastian Marino",
+   "Ronald Fedkiw"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2003,
+  "doi": "10.2312/SCA03/028-036",
+  "have": false
+ },
+ {
+  "key": "irving2004",
+  "title": "Invertible Finite Elements for Robust Simulation of Large Deformation",
+  "authors": [
+   "Geoffrey Irving",
+   "Joseph Teran",
+   "Ronald Fedkiw"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2004,
+  "doi": "10.1145/1028523.1028541",
+  "have": false
+ },
+ {
+  "key": "losasso2004",
+  "title": "Simulating Water and Smoke with an Octree Data Structure",
+  "authors": [
+   "Frank Losasso",
+   "Frédéric Gibou",
+   "Ronald Fedkiw"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2004,
+  "doi": "10.1145/1015706.1015745",
+  "have": false
+ },
+ {
+  "key": "molino2004",
+  "title": "A Virtual Node Algorithm for Changing Mesh Topology During Simulation",
+  "authors": [
+   "Neil Molino",
+   "Robert Bridson",
+   "Joseph Teran",
+   "Ronald Fedkiw"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2004,
+  "doi": "10.1145/1015706.1015734",
+  "have": false
+ },
+ {
+  "key": "muller2005",
+  "title": "Meshless Deformations Based on Shape Matching",
+  "authors": [
+   "Matthias Müller",
+   "Bruno Heidelberger",
+   "Matthias Teschner",
+   "Markus Gross"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2005,
+  "doi": "10.1145/1073204.1073216",
+  "have": false
+ },
+ {
+  "key": "clavet2005",
+  "title": "Particle-based Viscoelastic Fluid Simulation",
+  "authors": [
+   "Simon Clavet",
+   "Philippe Beaudoin",
+   "Pierre Poulin"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2005,
+  "doi": "10.1145/1073368.1073400",
+  "have": false
+ },
+ {
+  "key": "zhu2005",
+  "title": "Animating Sand as a Fluid",
+  "authors": [
+   "Yongning Zhu",
+   "Robert Bridson"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2005,
+  "doi": "10.1145/1073204.1073228",
+  "have": false
+ },
+ {
+  "key": "selle2005",
+  "title": "A Vortex Particle Method for Smoke, Water and Explosions",
+  "authors": [
+   "Andrew Selle",
+   "Nick Rasmussen",
+   "Ronald Fedkiw"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2005,
+  "doi": "10.1145/1073204.1073202",
+  "have": false
+ },
+ {
+  "key": "barbic2005",
+  "title": "Real-Time Subspace Integration for St. Venant-Kirchhoff Deformable Models",
+  "authors": [
+   "Jernej Barbič",
+   "Doug L. James"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2005,
+  "doi": "10.1145/1073204.1073261",
+  "have": false
+ },
+ {
+  "key": "muller2007",
+  "title": "Position Based Dynamics",
+  "authors": [
+   "Matthias Müller",
+   "Bruno Heidelberger",
+   "Marcus Hennix",
+   "John Ratcliff"
+  ],
+  "venue": "Journal of Visual Communication and Image Representation",
+  "year": 2007,
+  "doi": "10.1016/j.jvcir.2007.01.005",
+  "have": false
+ },
+ {
+  "key": "erleben2007",
+  "title": "Velocity-Based Shock Propagation for Multibody Dynamics Animation",
+  "authors": [
+   "Kenny Erleben"
+  ],
+  "venue": "ACM Transactions on Graphics",
+  "year": 2007,
+  "doi": "10.1145/1236246.1236258",
+  "have": false
+ },
+ {
+  "key": "sifakis2007",
+  "title": "Hybrid Simulation of Deformable Solids",
+  "authors": [
+   "Eftychios Sifakis",
+   "Tamal Shinar",
+   "Geoffrey Irving",
+   "Ronald Fedkiw"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2007,
+  "doi": "10.1145/1272690.1272705",
+  "have": false
+ },
+ {
+  "key": "kaufman2008",
+  "title": "Staggered Projections for Frictional Contact in Multibody Systems",
+  "authors": [
+   "Danny M. Kaufman",
+   "Shinjiro Sueda",
+   "Doug L. James",
+   "Dinesh K. Pai"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH Asia)",
+  "year": 2008,
+  "doi": "10.1145/1409060.1409117",
+  "have": false
+ },
+ {
+  "key": "bergou2008",
+  "title": "Discrete Elastic Rods",
+  "authors": [
+   "Miklós Bergou",
+   "Basile Audoly",
+   "Etienne Vouga",
+   "Max Wardetzky",
+   "Eitan Grinspun"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2008,
+  "doi": "10.1145/1360612.1360684",
+  "have": false
+ },
+ {
+  "key": "kim2008",
+  "title": "Wavelet Turbulence for Fluid Simulation",
+  "authors": [
+   "Janghee Kim",
+   "Seung-Ho Lee",
+   "Sung Yong Kim",
+   "Sung-Hee Lee"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2008,
+  "doi": "10.1145/1360612.1360654",
+  "have": false
+ },
+ {
+  "key": "solenthaler2009",
+  "title": "Predictive-Corrective Incompressible SPH",
+  "authors": [
+   "Barbara Solenthaler",
+   "Renato Pajarola"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2009,
+  "doi": "10.1145/1531326.1531346",
+  "have": false
+ },
+ {
+  "key": "gerszewski2009",
+  "title": "Physics-Based Animation of Large-Scale Splashing Liquids",
+  "authors": [
+   "David Gerszewski",
+   "Adam Bargteil",
+   "Barbara Cutler"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2009,
+  "doi": "10.1145/1629255.1629344",
+  "have": false
+ },
+ {
+  "key": "tasora2010",
+  "title": "A Convex Complementarity Approach for Simulating Large Granular Flows",
+  "authors": [
+   "Alessandro Tasora",
+   "Mihai Anitescu"
+  ],
+  "venue": "Journal of Computational and Nonlinear Dynamics",
+  "year": 2010,
+  "doi": "10.1115/1.4001902",
+  "have": false
+ },
+ {
+  "key": "mcadams2011",
+  "title": "Efficient Elasticity for Character Skinning with Contact and Collisions",
+  "authors": [
+   "Alexey McAdams",
+   "Yongning Zhu",
+   "Andrew Selle",
+   "Mark Empey",
+   "Rasmus Tamstorf",
+   "Joseph Teran",
+   "Eftychios Sifakis"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2011,
+  "doi": "10.1145/1964921.1964941",
+  "have": false
+ },
+ {
+  "key": "daviet2011",
+  "title": "A Hybrid Iterative Solver for Robustly Capturing Coulomb Friction in Hair Dynamics",
+  "authors": [
+   "Gilles Daviet",
+   "Florence Bertails-Descoubes",
+   "Laurence Boissieux"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH Asia)",
+  "year": 2011,
+  "doi": "10.1145/2024156.2024215",
+  "have": false
+ },
+ {
+  "key": "faure2011",
+  "title": "Sparse Meshless Models of Complex Deformable Solids",
+  "authors": [
+   "François Faure",
+   "Benjamin Gilles",
+   "Guillaume Bousquet",
+   "Dinesh K. Pai"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2011,
+  "doi": "10.1145/1964921.1964922",
+  "have": false
+ },
+ {
+  "key": "darles2011",
+  "title": "A Survey of Ocean Simulation and Rendering Techniques in Computer Graphics",
+  "authors": [
+   "Emmanuelle Darles",
+   "Benoît Crespin",
+   "Djamchid Ghazanfarpour",
+   "Pierre Roose"
+  ],
+  "venue": "Computer Graphics Forum",
+  "year": 2011,
+  "doi": "10.1111/j.1467-8659.2010.01828.x",
+  "have": false
+ },
+ {
+  "key": "pfaff2012",
+  "title": "Synthetic Turbulence Using Artificial Boundary Layers",
+  "authors": [
+   "Tobias Pfaff",
+   "Nils Thürey",
+   "Andrew Selle",
+   "Markus Gross"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH Asia)",
+  "year": 2012,
+  "doi": "10.1145/2366145.2366180",
+  "have": false
+ },
+ {
+  "key": "todorov2012",
+  "title": "MuJoCo: A Physics Engine for Model-Based Control",
+  "authors": [
+   "Emanuel Todorov",
+   "Tom Erez",
+   "Yuval Tassa"
+  ],
+  "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+  "year": 2012,
+  "doi": "10.1109/IROS.2012.6386109",
+  "have": false
+ },
+ {
+  "key": "sifakis2012",
+  "title": "FEM Simulation of 3D Deformable Solids: A Practitioner's Guide to Theory, Discretization and Model Reduction",
+  "authors": [
+   "Eftychios Sifakis",
+   "Jernej Barbič"
+  ],
+  "venue": "SIGGRAPH Course",
+  "year": 2012,
+  "have": false
+ },
+ {
+  "key": "stomakhin2013",
+  "title": "A Material Point Method for Snow Simulation",
+  "authors": [
+   "Alexey Stomakhin",
+   "Craig Schroeder",
+   "Lawrence Chai",
+   "Joseph Teran",
+   "Andrew Selle"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2013,
+  "doi": "10.1145/2461912.2461948",
+  "have": false
+ },
+ {
+  "key": "macklin2013",
+  "title": "Position Based Fluids",
+  "authors": [
+   "Miles Macklin",
+   "Matthias Müller"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2013,
+  "doi": "10.1145/2461912.2461984",
+  "have": false
+ },
+ {
+  "key": "liu2013",
+  "title": "Fast Simulation of Mass-Spring Systems",
+  "authors": [
+   "Tiantian Liu",
+   "Adam W. Bargteil",
+   "James F. O'Brien",
+   "Ladislav Kavan"
+  ],
+  "venue": "ACM Transactions on Graphics",
+  "year": 2013,
+  "doi": "10.1145/2508363.2508406",
+  "have": false
+ },
+ {
+  "key": "macklin2014",
+  "title": "Unified Particle Physics for Real-Time Applications",
+  "authors": [
+   "Miles Macklin",
+   "Matthias Müller",
+   "Nuttapong Chentanez",
+   "Tae-Yong Kim"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2014,
+  "doi": "10.1145/2601097.2601152",
+  "have": false
+ },
+ {
+  "key": "ihmsen2014",
+  "title": "Implicit Incompressible SPH",
+  "authors": [
+   "Markus Ihmsen",
+   "Jens Cornelis",
+   "Barbara Solenthaler",
+   "Christopher Horvath",
+   "Matthias Teschner"
+  ],
+  "venue": "IEEE Transactions on Visualization and Computer Graphics",
+  "year": 2014,
+  "doi": "10.1109/TVCG.2013.246",
+  "have": false
+ },
+ {
+  "key": "stomakhin2014",
+  "title": "Augmented MPM for Phase-Change and Varied Materials",
+  "authors": [
+   "Alexey Stomakhin",
+   "Craig Schroeder",
+   "Chenfanfu Jiang",
+   "Lawrence Chai",
+   "Joseph Teran",
+   "Andrew Selle"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2014,
+  "doi": "10.1145/2601097.2601176",
+  "have": false
+ },
+ {
+  "key": "bouaziz2014",
+  "title": "Projective Dynamics: Fusing Constraint Projections for Fast Simulation",
+  "authors": [
+   "Sofien Bouaziz",
+   "Sebastian Martin",
+   "Tiantian Liu",
+   "Ladislav Kavan",
+   "Mark Pauly"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2014,
+  "doi": "10.1145/2601097.2601116",
+  "have": false
+ },
+ {
+  "key": "pfaff2014",
+  "title": "Adaptive Tearing and Cracking of Thin Sheets",
+  "authors": [
+   "Tobias Pfaff",
+   "Rahul Narain",
+   "Juan Miguel de Joya",
+   "James F. O'Brien"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2014,
+  "doi": "10.1145/2601097.2601215",
+  "have": false
+ },
+ {
+  "key": "jiang2015",
+  "title": "The Affine Particle-In-Cell Method",
+  "authors": [
+   "Chenfanfu Jiang",
+   "Craig Schroeder",
+   "Andrew Selle",
+   "Joseph Teran",
+   "Alexey Stomakhin"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2015,
+  "doi": "10.1145/2766996",
+  "have": false
+ },
+ {
+  "key": "ando2015",
+  "title": "A Stream Function Solver for Liquid Simulations",
+  "authors": [
+   "Ryoichi Ando",
+   "Nils Thürey",
+   "Chris Wojtan"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2015,
+  "doi": "10.1145/2766935",
+  "have": false
+ },
+ {
+  "key": "gast2015",
+  "title": "Optimization Integrator for Large Time Steps",
+  "authors": [
+   "Theodore F. Gast",
+   "Craig Schroeder",
+   "Alexey Stomakhin",
+   "Joseph Teran",
+   "Eftychios Sifakis"
+  ],
+  "venue": "IEEE Transactions on Visualization and Computer Graphics",
+  "year": 2015,
+  "doi": "10.1109/TVCG.2015.2430323",
+  "have": false
+ },
+ {
+  "key": "hahn2015",
+  "title": "High-Resolution Brittle Fracture Simulation with Boundary Elements",
+  "authors": [
+   "David Hahn",
+   "Chris Wojtan"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2015,
+  "doi": "10.1145/2766908",
+  "have": false
+ },
+ {
+  "key": "macklin2016",
+  "title": "XPBD: Position-Based Simulation of Compliant Constrained Dynamics",
+  "authors": [
+   "Miles Macklin",
+   "Matthias Müller",
+   "Nuttapong Chentanez"
+  ],
+  "venue": "ACM SIGGRAPH Motion in Games",
+  "year": 2016,
+  "doi": "10.1145/2994258.2994272",
+  "have": false
+ },
+ {
+  "key": "daviet2016",
+  "title": "A Semi-Implicit Material Point Method for the Continuum Simulation of Granular Materials",
+  "authors": [
+   "Gilles Daviet",
+   "Florence Bertails-Descoubes"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2016,
+  "doi": "10.1145/2897824.2925876",
+  "have": false
+ },
+ {
+  "key": "narain2016",
+  "title": "ADMM ⊇ Projective Dynamics: Fast Simulation of General Constitutive Models",
+  "authors": [
+   "Rahul Narain",
+   "Matthew Overby",
+   "George E. Brown"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2016,
+  "doi": "10.1145/2994258.2994275",
+  "have": false
+ },
+ {
+  "key": "jiang2017",
+  "title": "The Material Point Method for Simulating Continuum Materials",
+  "authors": [
+   "Chenfanfu Jiang",
+   "Craig Schroeder",
+   "Joseph Teran",
+   "Alexey Stomakhin",
+   "Ryoichi Ando",
+   "Andre Pradhana"
+  ],
+  "venue": "SIGGRAPH Course",
+  "year": 2017,
+  "have": false
+ },
+ {
+  "key": "fu2017",
+  "title": "A Polynomial Particle-in-Cell Method",
+  "authors": [
+   "Chuyuan Fu",
+   "Qi Guo",
+   "Theodore Gast",
+   "Chenfanfu Jiang",
+   "Joseph Teran"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH Asia)",
+  "year": 2017,
+  "doi": "10.1145/3130800.3130878",
+  "have": false
+ },
+ {
+  "key": "hu2018",
+  "title": "A Moving Least Squares Material Point Method with Displacement Discontinuity and Two-Way Rigid Body Coupling",
+  "authors": [
+   "Yuanming Hu",
+   "Yu Fang",
+   "Ziheng Ge",
+   "Ziyin Qu",
+   "Yixin Zhu",
+   "Andre Pradhana",
+   "Chenfanfu Jiang"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2018,
+  "doi": "10.1145/3197517.3201293",
+  "have": false
+ },
+ {
+  "key": "liang2019",
+  "title": "Differentiable Cloth Simulation for Inverse Problems",
+  "authors": [
+   "Junbang Liang",
+   "Ming C. Lin",
+   "Vladlen Koltun"
+  ],
+  "venue": "Neural Information Processing Systems (NeurIPS)",
+  "year": 2019,
+  "have": false
+ },
+ {
+  "key": "hu2019",
+  "title": "ChainQueen: A Real-Time Differentiable Physical Simulator for Soft Robotics",
+  "authors": [
+   "Yuanming Hu",
+   "Jiancheng Liu",
+   "Andrew Spielberg",
+   "Joshua B. Tenenbaum",
+   "William T. Freeman",
+   "Jiajun Wu"
+  ],
+  "venue": "IEEE International Conference on Robotics and Automation (ICRA)",
+  "year": 2019,
+  "arxiv": "1810.01054",
+  "have": true
+ },
+ {
+  "key": "raissi2019",
+  "title": "Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear Partial Differential Equations",
+  "authors": [
+   "Maziar Raissi",
+   "Paris Perdikaris",
+   "George E. Karniadakis"
+  ],
+  "venue": "Journal of Computational Physics",
+  "year": 2019,
+  "doi": "10.1016/j.jcp.2018.10.045",
+  "have": true
+ },
+ {
+  "key": "greydanus2019",
+  "title": "Hamiltonian Neural Networks",
+  "authors": [
+   "Sam Greydanus",
+   "Misko Dzamba",
+   "Jason Yosinski"
+  ],
+  "venue": "Neural Information Processing Systems (NeurIPS)",
+  "year": 2019,
+  "arxiv": "1906.01563",
+  "have": true
+ },
+ {
+  "key": "macklin2019",
+  "title": "Small Steps in Physics Simulation",
+  "authors": [
+   "Miles Macklin",
+   "Kier Storey",
+   "Michael Lu",
+   "Pierre Terdiman",
+   "Nuttapong Chentanez",
+   "Stefan Jeschke",
+   "Matthias Müller"
+  ],
+  "venue": "ACM SIGGRAPH Symposium on Computer Animation",
+  "year": 2019,
+  "doi": "10.1145/3309486.3340247",
+  "have": false
+ },
+ {
+  "key": "li2020",
+  "title": "Incremental Potential Contact: Intersection- and Inversion-free, Large-Deformation Dynamics",
+  "authors": [
+   "Minchen Li",
+   "Zachary Ferguson",
+   "Teseo Schneider",
+   "Timothy Langlois",
+   "Danny M. Kaufman",
+   "Denis Zorin",
+   "Daniele Panozzo",
+   "Chenfanfu Jiang"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2020,
+  "doi": "10.1145/3386569.3392425",
+  "have": true
+ },
+ {
+  "key": "hu2020",
+  "title": "DiffTaichi: Differentiable Programming for Physical Simulation",
+  "authors": [
+   "Yuanming Hu",
+   "Luke Anderson",
+   "Tzu-Mao Li",
+   "Qi Sun",
+   "Nathan Carr",
+   "Jonathan Ragan-Kelley",
+   "Fredo Durand"
+  ],
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2020,
+  "arxiv": "1910.00935",
+  "have": true
+ },
+ {
+  "key": "geilinger2020",
+  "title": "ADD: Analytically Differentiable Dynamics for Multi-Body Systems with Frictional Contact",
+  "authors": [
+   "Moritz Geilinger",
+   "David Hahn",
+   "Jonas Zehnder",
+   "Marcel Bächer",
+   "Stelian Coros",
+   "Sebastian Coros"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH Asia)",
+  "year": 2020,
+  "doi": "10.1145/3414685.3417766",
+  "have": true
+ },
+ {
+  "key": "sanchez2020",
+  "title": "Learning to Simulate Complex Physics with Graph Networks",
+  "authors": [
+   "Alvaro Sanchez-Gonzalez",
+   "Jonathan Godwin",
+   "Tobias Pfaff",
+   "Rex Ying",
+   "Jure Leskovec",
+   "Peter W. Battaglia"
+  ],
+  "venue": "International Conference on Machine Learning (ICML)",
+  "year": 2020,
+  "arxiv": "2002.09405",
+  "have": true
+ },
+ {
+  "key": "cranmer2020",
+  "title": "Lagrangian Neural Networks",
+  "authors": [
+   "Miles Cranmer",
+   "Sam Greydanus",
+   "Stephan Hoyer",
+   "Peter Battaglia",
+   "David Spergel",
+   "Shirley Ho"
+  ],
+  "venue": "ICLR Workshop on Deep Differential Equations",
+  "year": 2020,
+  "arxiv": "2003.04630",
+  "have": true
+ },
+ {
+  "key": "ummenhofer2020",
+  "title": "Lagrangian Fluid Simulation with Continuous Convolutions",
+  "authors": [
+   "Benjamin Ummenhofer",
+   "Lukas Prantl",
+   "Nils Thürey",
+   "Vladlen Koltun"
+  ],
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2020,
+  "have": true
+ },
+ {
+  "key": "pfaff2021",
+  "title": "Learning Mesh-Based Simulation with Graph Networks",
+  "authors": [
+   "Tobias Pfaff",
+   "Meire Fortunato",
+   "Alvaro Sanchez-Gonzalez",
+   "Peter W. Battaglia"
+  ],
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2021,
+  "arxiv": "2010.03409",
+  "have": true
+ },
+ {
+  "key": "li2021fno",
+  "title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+  "authors": [
+   "Zongyi Li",
+   "Nikola Kovachki",
+   "Kamyar Azizzadenesheli",
+   "Burigede Liu",
+   "Kaushik Bhattacharya",
+   "Andrew Stuart",
+   "Anima Anandkumar"
+  ],
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2021,
+  "arxiv": "2010.08895",
+  "have": true
+ },
+ {
+  "key": "macklin2021",
+  "title": "A Constraint-Based Formulation of Stable Neo-Hookean Materials",
+  "authors": [
+   "Miles Macklin",
+   "Matthias Müller"
+  ],
+  "venue": "ACM SIGGRAPH Motion in Games",
+  "year": 2021,
+  "doi": "10.1145/3487983.3488289",
+  "have": false
+ },
+ {
+  "key": "kochkov2021",
+  "title": "Machine Learning-Accelerated Computational Fluid Dynamics",
+  "authors": [
+   "Dmitrii Kochkov",
+   "Jamie A. Smith",
+   "Ayya Alieva",
+   "Qing Wang",
+   "Michael P. Brenner",
+   "Stephan Hoyer"
+  ],
+  "venue": "Proceedings of the National Academy of Sciences",
+  "year": 2021,
+  "doi": "10.1073/pnas.2101784118",
+  "have": true
+ },
+ {
+  "key": "werling2021",
+  "title": "Fast and Feature-Complete Differentiable Physics for Articulated Rigid Bodies with Contact",
+  "authors": [
+   "Keegan Werling",
+   "Dalton Omens",
+   "Jeong Joon Lee",
+   "Ion Exarchos",
+   "C. Karen Liu"
+  ],
+  "venue": "Robotics: Science and Systems (RSS)",
+  "year": 2021,
+  "arxiv": "2103.16021",
+  "have": true
+ },
+ {
+  "key": "freeman2021",
+  "title": "Brax: A Differentiable Physics Engine for Large Scale Rigid Body Simulation",
+  "authors": [
+   "C. Daniel Freeman",
+   "Erik Frey",
+   "Anton Raichuk",
+   "Sertan Girgin",
+   "Igor Mordatch",
+   "Olivier Bachem"
+  ],
+  "venue": "NeurIPS Datasets and Benchmarks",
+  "year": 2021,
+  "arxiv": "2106.13281",
+  "have": true
+ },
+ {
+  "key": "makoviychuk2021",
+  "title": "Isaac Gym: High Performance GPU-Based Physics Simulation for Robot Learning",
+  "authors": [
+   "Viktor Makoviychuk",
+   "Lukasz Wawrzyniak",
+   "Yunfei Guo",
+   "Michelle Lu",
+   "Kier Storey",
+   "Miles Macklin",
+   "Dionysios Hoeller",
+   "Nikita Rudin",
+   "Arthur Allshire",
+   "David Handa",
+   "Ankur Handa",
+   "Gavriel State"
+  ],
+  "venue": "NeurIPS Datasets and Benchmarks",
+  "year": 2021,
+  "arxiv": "2108.10470",
+  "have": true
+ },
+ {
+  "key": "rudin2021",
+  "title": "Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning",
+  "authors": [
+   "Nikita Rudin",
+   "David Hoeller",
+   "Philipp Reist",
+   "Marco Hutter"
+  ],
+  "venue": "Conference on Robot Learning (CoRL)",
+  "year": 2021,
+  "arxiv": "2109.11978",
+  "have": true
+ },
+ {
+  "key": "huang2021",
+  "title": "PlasticineLab: A Soft-Body Manipulation Benchmark with Differentiable Physics",
+  "authors": [
+   "Zhiao Huang",
+   "Yuanming Hu",
+   "Tianhao Wu",
+   "Hao Su",
+   "Joshua B. Tenenbaum",
+   "Chuang Gan"
+  ],
+  "venue": "International Conference on Learning Representations (ICLR)",
+  "year": 2021,
+  "arxiv": "2104.03311",
+  "have": true
+ },
+ {
+  "key": "diffaqua2021",
+  "title": "DiffAqua: A Differentiable Computational Design Pipeline for Soft Underwater Swimmers with Shape Interpolation",
+  "authors": [
+   "Pingchuan Ma",
+   "Tao Du",
+   "John Z. Zhang",
+   "Kui Wu",
+   "Andrew Spielberg",
+   "Robert K. Katzschmann",
+   "Wojciech Matusik"
+  ],
+  "venue": "ACM Transactions on Graphics (SIGGRAPH)",
+  "year": 2021,
+  "doi": "10.1145/3450626.3459832",
+  "have": false
+ },
+ {
+  "key": "qiao2021",
+  "title": "Differentiable Simulation of Soft Multi-Body Systems",
+  "authors": [
+   "Yi-Ling Qiao",
+   "Junbang Liang",
+   "Vladlen Koltun",
+   "Ming C. Lin"
+  ],
+  "venue": "Conference on Robot Learning (CoRL)",
+  "year": 2021,
+  "arxiv": "2105.00746",
+  "have": true
+ }
+]

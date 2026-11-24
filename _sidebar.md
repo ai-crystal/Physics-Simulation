@@ -1,0 +1,46 @@
+- [开始阅读](books/intro/chapters/ch01.md)
+- [系列首页](README.md)
+
+- **01　入门篇**
+  - *第一篇  从世界到方程*
+    - [第 1 章 从一片下落的叶子说起](books/intro/chapters/ch01.md)
+    - [第 2 章 一条抛物线的四百年](books/intro/chapters/ch02.md)
+    - [第 3 章 当方程解不出来](books/intro/chapters/ch03.md)
+  - *第二篇  离散化的几条路*
+    - [第 4 章 把连续的世界切成有限块](books/intro/chapters/ch04.md)
+    - [第 5 章 刚体：从台球到倒塌的塔](books/intro/chapters/ch05.md)
+    - [第 6 章 布料与柔体：会皱的世界](books/intro/chapters/ch06.md)
+    - [第 7 章 流体：烟、水与火](books/intro/chapters/ch07.md)
+    - [第 8 章 断裂、颗粒与雪](books/intro/chapters/ch08.md)
+  - *第三篇  规模、速度与反问题*
+    - [第 9 章 让模拟跑得动](books/intro/chapters/ch09.md)
+    - [第 10 章 可微物理：让模拟反过来用](books/intro/chapters/ch10.md)
+    - [第 11 章 学习的介入：神经模拟器](books/intro/chapters/ch11.md)
+    - [第 12 章 今天的地图与明天的边界](books/intro/chapters/ch12.md)
+  - [术语中英对照](books/intro/appendix/glossary.md)
+  - [论文时间线](books/intro/appendix/timeline.md)
+  - [参考文献](books/intro/appendix/refs.md)
+
+- **02　数学基础**
+  - *第一篇  空间与场*
+    - [第 1 章 模拟器里到底有哪些数学](books/math/chapters/ch01.md)
+    - [第 2 章 向量、矩阵与空间变换](books/math/chapters/ch02.md)
+    - [第 3 章 张量：应变、应力与守恒律](books/math/chapters/ch03.md)
+  - *第二篇  方程与求解*
+    - [第 4 章 常微分方程与时间积分](books/math/chapters/ch04.md)
+    - [第 5 章 偏微分方程：热、波与流](books/math/chapters/ch05.md)
+    - [第 6 章 大规模线性系统](books/math/chapters/ch06.md)
+    - [第 7 章 非线性方程与约束](books/math/chapters/ch07.md)
+    - [第 8 章 变分原理与最优化](books/math/chapters/ch08.md)
+  - *第三篇  离散与实现*
+    - [第 9 章 有限元数学：弱形式与形函数](books/math/chapters/ch09.md)
+    - [第 10 章 离散微分几何](books/math/chapters/ch10.md)
+    - [第 11 章 概率、估计与反问题](books/math/chapters/ch11.md)
+    - [第 12 章 数值实现中的数学](books/math/chapters/ch12.md)
+  - [术语中英对照](books/math/appendix/glossary.md)
+  - [论文时间线](books/math/appendix/timeline.md)
+  - [参考文献](books/math/appendix/refs.md)
+
+- **系列**
+  - [01 入门篇 PDF](output/ps-intro.pdf)
+  - [02 数学基础 PDF](output/ps-math.pdf)

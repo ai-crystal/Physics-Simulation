@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 3,
+  "title": "物理模拟技术·刚体与碰撞",
+  "cover_title": "物理模拟技术",
+  "volume": "03",
+  "volume_name": "刚体与碰撞",
+  "subtitle": "让物体撞在一起",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-rigid.pdf",
+  "accent": "#6B4A22",
+  "accent2": "#A65B1E",
+  "cover_accent": "#E0BE8F",
+  "ice": "#E3C9A6",
+  "art": "logo8.png",
+  "art_back": "logo9.png",
+  "art_pos": "50% 50%",
+  "tag_line": "碰撞是物理引擎里最不讲道理的部分。",
+  "cover_tag": "从惯性张量到接触求解器<br>再到一摞箱子为什么不抖",
+  "ticks": [
+    "姿态",
+    "碰撞",
+    "接触",
+    "堆叠"
+  ],
+  "back_title": "两个物体碰在一起<br>背后是一整套互补问题",
+  "back_lead": "刚体看起来简单，难在接触：物体什么时候算碰上、法向力该多大、摩擦锥怎么约束、堆叠为什么越压越抖。这一册从姿态与惯性张量讲到 GJK、顺序冲量、LCP 与小步长，也讲实时引擎在工程上怎么取舍。",
+  "back_items": [
+    [
+      "第 2 章",
+      "惯性张量与欧拉方程"
+    ],
+    [
+      "第 4 章",
+      "GJK 与连续碰撞"
+    ],
+    [
+      "第 5 章",
+      "接触即互补问题"
+    ],
+    [
+      "第 7 章",
+      "堆叠与抖动"
+    ],
+    [
+      "第 11 章",
+      "Bullet、PhysX 与 MuJoCo"
+    ]
+  ],
+  "back_quote": "让一摞箱子安静地站着，比让水花溅起来更难。",
+  "toc_sections": true
+}

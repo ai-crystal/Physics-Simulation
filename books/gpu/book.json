@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 7,
+  "title": "物理模拟技术·高性能实现与 GPU 并行",
+  "cover_title": "物理模拟技术",
+  "volume": "07",
+  "volume_name": "高性能实现与 GPU 并行",
+  "subtitle": "一帧十六毫秒的预算",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-gpu.pdf",
+  "accent": "#245C3A",
+  "accent2": "#B45309",
+  "cover_accent": "#9DD0AE",
+  "ice": "#B4DCC2",
+  "art": "logo1.png",
+  "art_back": "logo2.png",
+  "art_pos": "50% 50%",
+  "tag_line": "算法决定上限，工程决定能不能到。",
+  "cover_tag": "数据布局、稀疏网格、并行求解<br>以及实时引擎的确定性",
+  "ticks": [
+    "缓存",
+    "GPU",
+    "稀疏",
+    "确定性"
+  ],
+  "back_title": "同一个算法<br>为什么在 GPU 上快二十倍，也可能慢十倍",
+  "back_lead": "物理模拟的性能不是把循环改成并行就够了：内存布局、访存模式、原子操作、求解器收敛速度都会改变结果。这一册讲数据布局、CUDA 与稀疏结构、GPU 上的多重网格、粒子邻域、图着色，以及实时引擎的固定步长与可回滚。",
+  "back_items": [
+    [
+      "第 2 章",
+      "缓存与数据布局"
+    ],
+    [
+      "第 4 章",
+      "稀疏网格与 VDB"
+    ],
+    [
+      "第 5 章",
+      "GPU 上的线性求解"
+    ],
+    [
+      "第 6 章",
+      "粒子排序与邻域"
+    ],
+    [
+      "第 9 章",
+      "确定性、回滚与网络同步"
+    ]
+  ],
+  "back_quote": "并行不是加速按钮，它会把每一个坏决定放大。",
+  "toc_sections": true
+}

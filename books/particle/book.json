@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 6,
+  "title": "物理模拟技术·颗粒、雪与物质点法",
+  "cover_title": "物理模拟技术",
+  "volume": "06",
+  "volume_name": "颗粒、雪与物质点法",
+  "subtitle": "沙、雪、泡沫与岩浆",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-particle.pdf",
+  "accent": "#6E5A1E",
+  "accent2": "#A65B1E",
+  "cover_accent": "#DCC98D",
+  "ice": "#E4D6A8",
+  "art": "logo14.png",
+  "art_back": "logo15.png",
+  "art_pos": "50% 50%",
+  "tag_line": "沙既是颗粒，也是连续体。",
+  "cover_tag": "从库仑摩擦的沙堆<br>到 MPM 里的雪与泡沫",
+  "ticks": [
+    "DEM",
+    "μ(I)",
+    "MPM",
+    "相变"
+  ],
+  "back_title": "沙堆为什么会塌<br>雪为什么会被压实",
+  "back_lead": "颗粒物质介于固体与流体之间：静止时能堆成陡坡，流动时又像液体。这一册从离散元讲到 μ(I) 流变，再到物质点法的完整循环、MLS-MPM、雪与泡沫的本构、相变与大规模并行。",
+  "back_items": [
+    [
+      "第 1 章",
+      "沙堆的悖论"
+    ],
+    [
+      "第 4 章",
+      "MPM 的基本循环"
+    ],
+    [
+      "第 6 章",
+      "雪、泡沫与相变"
+    ],
+    [
+      "第 7 章",
+      "隐式 MPM"
+    ],
+    [
+      "第 10 章",
+      "百万颗粒的 GPU 实现"
+    ]
+  ],
+  "back_quote": "颗粒模拟的每一步，都在决定它这一刻算固体还是算流体。",
+  "toc_sections": true
+}

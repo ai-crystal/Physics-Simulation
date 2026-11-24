@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 4,
+  "title": "物理模拟技术·柔体、布料与断裂",
+  "cover_title": "物理模拟技术",
+  "volume": "04",
+  "volume_name": "柔体、布料与断裂",
+  "subtitle": "会皱、会断、会回弹",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-deform.pdf",
+  "accent": "#7A2F45",
+  "accent2": "#A65B1E",
+  "cover_accent": "#E3A7B4",
+  "ice": "#E8BCC6",
+  "art": "logo10.png",
+  "art_back": "logo11.png",
+  "art_pos": "50% 50%",
+  "tag_line": "柔体的难点不在形变，而在不塌、不穿、不炸。",
+  "cover_tag": "弹簧、有限元、投影动力学<br>一直讲到布料撕裂与脆性破碎",
+  "ticks": [
+    "弹簧",
+    "FEM",
+    "壳与杆",
+    "断裂"
+  ],
+  "back_title": "一块布为什么会有褶<br>一块玻璃为什么会碎成那样",
+  "back_lead": "柔体模拟的主线是把连续介质的能量写成离散形式，再想办法在有限时间里把它最小化。这一册从弹簧质点讲到 XPBD、Neo-Hookean、投影动力学、离散壳与弹性杆，最后落到自碰撞、撕裂与脆性断裂。",
+  "back_items": [
+    [
+      "第 2 章",
+      "PBD 与 XPBD"
+    ],
+    [
+      "第 4 章",
+      "材料模型与粘弹性"
+    ],
+    [
+      "第 6 章",
+      "投影动力学"
+    ],
+    [
+      "第 9 章",
+      "自碰撞与 IPC"
+    ],
+    [
+      "第 10 章",
+      "断裂与破碎"
+    ]
+  ],
+  "back_quote": "柔体模拟的每一步，都是在刚度和稳定之间讨价还价。",
+  "toc_sections": true
+}

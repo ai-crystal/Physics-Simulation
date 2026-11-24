@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 1,
+  "title": "物理模拟技术·入门篇",
+  "cover_title": "物理模拟技术",
+  "volume": "01",
+  "volume_name": "入门篇",
+  "subtitle": "从抛物线到可微世界",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-intro.pdf",
+  "accent": "#1D4E5F",
+  "accent2": "#B45309",
+  "cover_accent": "#8FBEDC",
+  "ice": "#A9C9DA",
+  "art": "logo5.png",
+  "art_back": "logo4.png",
+  "art_pos": "50% 46%",
+  "tag_line": "世界先在方程里，后来才在屏幕上。",
+  "cover_tag": "一条从伽利略的斜面<br>走到可微求解器的路线",
+  "ticks": [
+    "1687　原理",
+    "1983　粒子",
+    "1999　网格流体",
+    "2026　可微"
+  ],
+  "back_title": "一台计算机要怎样才能<br>把一块布揉皱、把水倒进杯子",
+  "back_lead": "它得把连续的物理定律切成有限块，在每一帧里重新算一遍力与约束，再让这些数字看起来像真的。这一册不分门派，把刚体、布料、流体、颗粒、断裂、并行与可微模拟摊在同一张地图上，只讲脉络，不陷细节。",
+  "back_items": [
+    [
+      "第 3 章",
+      "方程解不出来的那一步"
+    ],
+    [
+      "第 5 章",
+      "刚体：从台球到倒塌的塔"
+    ],
+    [
+      "第 7 章",
+      "烟、水与火"
+    ],
+    [
+      "第 10 章",
+      "让模拟反过来用"
+    ],
+    [
+      "第 12 章",
+      "今天的地图与边界"
+    ]
+  ],
+  "back_quote": "模拟不是把世界算准，而是把世界算到看起来对、并且来得及。",
+  "toc_sections": true
+}

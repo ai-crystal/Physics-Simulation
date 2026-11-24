@@ -1,0 +1,55 @@
+{
+  "series": "物理模拟技术",
+  "series_en": "PHYSICS SIMULATION",
+  "series_slug": "physics-sim",
+  "order": 8,
+  "title": "物理模拟技术·可微物理与神经模拟",
+  "cover_title": "物理模拟技术",
+  "volume": "08",
+  "volume_name": "可微物理与神经模拟",
+  "subtitle": "让梯度穿过时间",
+  "author": "Dr. Dezeming",
+  "edition": "2026 年 · 第一版",
+  "pdf": "ps-diff.pdf",
+  "accent": "#52286B",
+  "accent2": "#A65B1E",
+  "cover_accent": "#C7A6DE",
+  "ice": "#D2B8E6",
+  "art": "logo3.png",
+  "art_back": "logo5.png",
+  "art_pos": "50% 50%",
+  "tag_line": "模拟器不只回答问题，还要回答“该改哪里”。",
+  "cover_tag": "伴随法、可微求解器、图网络<br>与物理与学习的混合",
+  "ticks": [
+    "伴随",
+    "可微",
+    "图网络",
+    "Sim2Real"
+  ],
+  "back_title": "如果模拟器可导<br>它就不只是预测，还能被优化",
+  "back_lead": "可微物理把整个时间步进当成一个可求导的程序：梯度可以穿过碰撞、流体与柔体，用来做参数辨识、形状优化、控制与系统辨识。这一册讲自动微分、伴随方程、可微求解器的实现难点，也讲神经代理模型、算子学习与混合模拟。",
+  "back_items": [
+    [
+      "第 2 章",
+      "自动微分"
+    ],
+    [
+      "第 4 章",
+      "可微刚体与接触"
+    ],
+    [
+      "第 5 章",
+      "流体的伴随方程"
+    ],
+    [
+      "第 7 章",
+      "长时窗与梯度"
+    ],
+    [
+      "第 11 章",
+      "混合模拟与 Sim2Real"
+    ]
+  ],
+  "back_quote": "梯度是模拟器最昂贵、也最有用的一种输出。",
+  "toc_sections": true
+}

@@ -1,0 +1,147 @@
+/* 全书版式：A4，宋体正文 + 雅黑标题。强调色按册在 book.json 里指定，
+   构建时替换下面两个占位值。注意：只能使用静态字体（SimSun / Microsoft YaHei /
+   Consolas），变量字体会被 Chrome 拆成 Type3，导致体积暴涨。 */
+
+@page { size: A4; margin: 21mm 19mm 19mm 19mm; }
+
+:root{
+  --ink:#18222E; --muted:#5A6472; --faint:#8B94A1;
+  --accent:#14507A; --accent2:#A65B1E; --line:#DEDCD6; --paper:#FFFFFF;
+  --wash:#F5F8FA; --washline:#7FA7C4;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family:"SimSun","Songti SC",serif;
+  font-size:10.5pt; line-height:1.86; color:var(--ink);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  text-align:justify;
+}
+
+p{ margin:.40em 0; text-indent:2em; text-align:justify; }
+p.noindent, .noindent{ text-indent:0; }
+strong{ font-family:"Microsoft YaHei",sans-serif; font-weight:700; color:#0F1720; }
+em{ font-style:normal; color:var(--accent2); font-weight:600; }
+a{ color:inherit; text-decoration:none; }
+sup{ font-size:.74em; line-height:0; }
+
+/* 供两遍排版取页码的隐形标记 */
+.pgmark{ font-size:0.6pt; color:#FFFFFF; letter-spacing:0; }
+
+/* ---------------- 扉页 ---------------- */
+.titlepage{ page-break-after:always; height:205mm; padding-top:58mm; text-align:center; overflow:hidden; }
+.titlepage h1{ font-size:33pt; letter-spacing:.16em; margin:0 0 9mm; border:none; padding:0;
+  text-indent:0; font-weight:700; color:#0E1720; }
+.titlepage p{ text-indent:0; text-align:center; }
+.titlepage p:nth-of-type(1){ font-family:"Microsoft YaHei",sans-serif; font-size:12pt;
+  color:var(--muted); letter-spacing:.10em; }
+.titlepage p:nth-of-type(2){ margin-top:44mm; font-size:13.5pt; letter-spacing:.20em; color:#243040; }
+.titlepage p:nth-of-type(3){ margin-top:6mm; font-family:"Microsoft YaHei",sans-serif;
+  font-size:9.4pt; color:var(--faint); letter-spacing:.10em; }
+
+/* ---------------- 版权页 ---------------- */
+.copyright{ page-break-after:always; padding-top:132mm; font-family:"Microsoft YaHei",sans-serif;
+  font-size:8.9pt; color:var(--muted); line-height:1.95; }
+.copyright p{ text-indent:0; margin:.45em 0; }
+.copyright strong{ color:#38414E; }
+
+/* ---------------- 目录 ---------------- */
+.toc{ page-break-before:always; page-break-after:always; }
+.toc h1{ font-family:"Microsoft YaHei",sans-serif; font-size:21pt; font-weight:600;
+  margin:0 0 5mm; padding-bottom:3mm; border-bottom:1.6pt solid var(--accent); text-indent:0;
+  letter-spacing:.18em; }
+.toc .tocpart{ font-family:"Microsoft YaHei",sans-serif; font-size:9.2pt; font-weight:700;
+  page-break-after:avoid; margin:2.9mm 0 0.6mm; color:var(--accent); letter-spacing:.08em; }
+.toc .row{ overflow:hidden; border-bottom:.4pt dotted #D8D3C8; padding:.32mm 0 .30mm; line-height:1.42; }
+.toc .l1{ font-family:"Microsoft YaHei",sans-serif; font-size:9.0pt; font-weight:600; margin-top:.8mm; }
+.toc .l2{ font-size:8.2pt; margin-left:8mm; color:#3A4450; line-height:1.42; }
+.toc .tt{ display:block; padding-right:13mm; line-height:1.42; }
+.toc .pg{ float:right; font-family:"Microsoft YaHei",sans-serif; font-size:8.5pt;
+  color:var(--muted); min-width:8mm; text-align:right; }
+
+/* ---------------- 篇章页 ---------------- */
+.part{ page-break-before:always; page-break-after:always; min-height:208mm; padding-top:56mm; }
+.part h1{ font-family:"SimSun",serif; font-size:26pt; margin:0 0 5mm; text-indent:0;
+  letter-spacing:.10em; border:none; padding:0; }
+.part blockquote{ border:none; background:none; padding:0; margin:0 0 13mm; color:var(--muted);
+  font-size:10.4pt; line-height:1.9; max-width:110mm; font-family:"SimSun",serif; }
+.part ul{ list-style:none; margin:0; padding:0; font-family:"Microsoft YaHei",sans-serif;
+  font-size:9.2pt; line-height:2.0; color:#4A5462; }
+.part li{ margin:0; text-align:left; }
+
+/* ---------------- 章节 ---------------- */
+.chap-open{ page-break-before:always; margin:0 0 7mm; padding-top:12mm; }
+.chap-open::before{ content:""; display:block; width:24mm; height:1.8pt; background:var(--accent);
+  margin-bottom:6mm; }
+h1{ font-family:"SimSun",serif; font-size:23pt; line-height:1.42; font-weight:700;
+  margin:0 0 5mm; text-indent:0; letter-spacing:.02em; }
+h2{ font-family:"Microsoft YaHei",sans-serif; font-size:13.2pt; font-weight:600; margin:8mm 0 2.6mm;
+  padding-left:3mm; border-left:3pt solid var(--accent); text-indent:0; page-break-after:avoid;
+  line-height:1.5; }
+h3{ font-family:"Microsoft YaHei",sans-serif; font-size:10.9pt; font-weight:600; margin:5.4mm 0 1.8mm;
+  color:#2E3A47; text-indent:0; page-break-after:avoid; }
+h4{ font-family:"Microsoft YaHei",sans-serif; font-size:10.1pt; font-weight:600; margin:3.6mm 0 1.2mm;
+  color:#44505E; text-indent:0; page-break-after:avoid; }
+
+blockquote{
+  margin:4.6mm 0; padding:3.4mm 4.6mm; background:var(--wash); border-left:2.4pt solid var(--washline);
+  font-family:"Microsoft YaHei",sans-serif; font-size:9.1pt; line-height:1.8; color:#414C59;
+  page-break-inside:avoid;
+}
+blockquote p{ text-indent:0; margin:.18em 0; }
+blockquote strong{ color:var(--accent); }
+
+ul,ol{ margin:.35em 0 .55em 1.35em; padding-left:.9em; }
+li{ margin:.16em 0; text-align:justify; }
+li p{ text-indent:0; }
+
+hr{ border:none; border-top:.5pt solid var(--line); margin:6mm 0; }
+
+/* ---------------- 插图 ---------------- */
+figure.fig{ margin:5.4mm 0 6mm; page-break-inside:avoid; text-align:center; }
+figure.fig img{ max-width:100%; max-height:112mm; object-fit:contain; }
+figure.fig figcaption{
+  font-family:"Microsoft YaHei",sans-serif; font-size:8.6pt; color:var(--muted);
+  margin-top:2.2mm; line-height:1.62; text-indent:0; text-align:center;
+}
+figure.fig figcaption b{ color:var(--accent); font-weight:600; }
+p img{ max-width:100%; }
+
+/* ---------------- 表格 ---------------- */
+table{ border-collapse:collapse; width:100%; margin:4.4mm 0; font-size:8.5pt;
+  font-family:"Microsoft YaHei",sans-serif; page-break-inside:auto; }
+tr{ page-break-inside:avoid; }
+thead{ display:table-header-group; }
+th,td{ border-bottom:.5pt solid #D3D7DD; padding:1.6mm 1.9mm; text-align:left; vertical-align:top; }
+th{ background:#F2F5F8; font-weight:600; border-top:.9pt solid #8E99A6; }
+tr:nth-child(even) td{ background:#FBFCFD; }
+caption{ caption-side:bottom; font-family:"Microsoft YaHei",sans-serif; font-size:8.3pt;
+  color:var(--muted); padding-top:1.8mm; text-align:center; }
+caption b{ color:var(--accent); }
+
+/* ---------------- 代码 ---------------- */
+pre{ background:#F6F7F8; border:.5pt solid #E3E6EA; border-radius:2pt; padding:2.8mm 3.6mm;
+  font-family:"Consolas","Courier New",monospace; font-size:7.9pt;
+  line-height:1.58; overflow:auto; page-break-inside:avoid; margin:3.6mm 0; }
+code{ font-family:"Consolas","Courier New",monospace; font-size:8.5pt; background:#F1F3F5;
+  padding:0 .8mm; border-radius:2pt; }
+pre code{ background:none; padding:0; font-size:inherit; }
+
+/* ---------------- 公式（KaTeX：文本型，可复制、可搜索） ---------------- */
+.katex{ font-size:1.02em; }
+.katex-display{ margin:3mm 0 !important; page-break-inside:avoid; }
+.katex .base{ white-space:nowrap; }
+.katex-error{ color:#b91c1c !important; }
+
+/* ---------------- 引用与参考文献 ---------------- */
+a.cite{ color:var(--accent2); font-family:"Microsoft YaHei",sans-serif; font-size:7.6pt;
+  vertical-align:super; line-height:0; }
+.ref{ font-size:8.5pt; line-height:1.6; margin:0 0 1.5mm; padding-left:10mm; text-indent:-10mm;
+  font-family:"Microsoft YaHei",sans-serif; }
+.ref .num{ color:var(--accent); margin-right:1.8mm; }
+
+/* ---------------- 后记 ---------------- */
+.afterword{ page-break-before:always; }
+.afterword p.sig{ text-indent:0; text-align:right; margin-top:6mm;
+  font-family:"Microsoft YaHei",sans-serif; font-size:9.8pt; color:var(--muted); line-height:1.9; }
