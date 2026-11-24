@@ -18,7 +18,7 @@
 |---|---|---|---|---|---|
 | **01 入门篇** | 从伽利略的斜面讲到可微求解器：历史、脉络、每类物质的主流方法与边界，不深挖公式。 | 12 | 109 | [阅读](books/intro/chapters/ch01.md) | <a href="output/ps-intro.pdf" target="_blank" rel="noopener">下载</a> |
 | **02 数学基础** | 向量与旋转、应变应力、时间积分、稀疏求解、约束优化、有限元弱形式与离散微分几何。 | 12 | 117 | [阅读](books/math/chapters/ch01.md) | <a href="output/ps-math.pdf" target="_blank" rel="noopener">下载</a> |
-| **03 刚体与碰撞** | 姿态与惯性张量、GJK、顺序冲量、LCP、摩擦锥、堆叠抖动，以及实时引擎的工程取舍。 | 12 | — | 即将推出 | — |
+| **03 刚体与碰撞** | 姿态与惯性张量、GJK、顺序冲量、LCP、摩擦锥、堆叠抖动，以及实时引擎的工程取舍。 | 12 | 100 | [阅读](books/rigid/chapters/ch01.md) | <a href="output/ps-rigid.pdf" target="_blank" rel="noopener">下载</a> |
 | **04 柔体、布料与断裂** | 弹簧质点、PBD/XPBD、有限元与材料模型、投影动力学、壳与杆、自碰撞、断裂。 | 12 | — | 即将推出 | — |
 | **05 流体、烟火与水面** | 纳维-斯托克斯逐项、投影、平流、涡量、SPH、FLIP/APIC、表面张力、燃烧与海洋。 | 13 | — | 即将推出 | — |
 | **06 颗粒、雪与物质点法** | DEM、μ(I) 流变、MPM 与 MLS-MPM、雪与泡沫的本构、隐式 MPM、两相耦合。 | 11 | — | 即将推出 | — |
@@ -31,6 +31,7 @@
 
 - [01 入门篇 PDF](output/ps-intro.pdf)
 - [02 数学基础 PDF](output/ps-math.pdf)
+- [03 刚体与碰撞 PDF](output/ps-rigid.pdf)
 
 ## 怎么读
 
