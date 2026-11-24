@@ -102,26 +102,21 @@ axl.add_patch(Polygon([Vp[idx([-1, 1, 1])], Vp[idx([-1, 1, -1])],
 
 cc = proj(np.zeros(3), ORG, SCL)
 cols = [BLUE, ACCENT, GREEN]
-AXL = 0.335
+AXL = np.array([0.400, 0.340, 0.620])      # 三根轴画多长（z 轴指向读者，需更长才出头）
+lbls = [("$I_1 = 0.040$", (0.055, -0.115), "left"),
+        ("$I_2 = 0.080$", (-0.075, 0.135), "right"),
+        ("$I_3 = 0.104$", (-0.030, -0.190), "left")]
 for k in range(3):
     d = evecs[:, k]
     if d[np.argmax(np.abs(d))] < 0:
         d = -d
-    tip = proj(AXL * d, ORG, SCL)
-    tail = proj(-AXL * d, ORG, SCL)
+    L = AXL[k]
+    tip = proj(L * d, ORG, SCL)
+    tail = proj(-L * d, ORG, SCL)
     axl.plot([tail[0], tip[0]], [tail[1], tip[1]], color=cols[k], lw=1.5,
              ls=(0, (6, 3)), zorder=7, alpha=0.95)
-    arrow(axl, proj(0.80 * AXL * d, ORG, SCL), tip, color=cols[k], lw=1.6, ms=8, z=8)
-
-lbl = [("$I_1 = 0.040$", (0.10, -0.16), "left"),
-       ("$I_2 = 0.080$", (-0.10, 0.17), "right"),
-       ("$I_3 = 0.104$", (-0.10, -0.13), "right")]
-for k in range(3):
-    d = evecs[:, k]
-    if d[np.argmax(np.abs(d))] < 0:
-        d = -d
-    tip = proj(AXL * d, ORG, SCL)
-    txt, off, ha = lbl[k]
+    arrow(axl, proj(0.82 * L * d, ORG, SCL), tip, color=cols[k], lw=1.6, ms=8, z=8)
+    txt, off, ha = lbls[k]
     axl.text(tip[0] + off[0], tip[1] + off[1], txt, fontsize=8.8, color=cols[k],
              weight="bold", ha=ha, zorder=12)
 axl.plot([cc[0]], [cc[1]], "o", ms=3.8, color=INK, zorder=10)
@@ -138,13 +133,19 @@ for x, v, a in zip(xs, evals * 1e3, analytic * 1e3):
 axr.set_xticks(xs)
 axr.set_xticklabels(["$I_1$", "$I_2$", "$I_3$"])
 axr.set_xlabel("绕 $x$ 轴　　绕 $y$ 轴　　绕 $z$ 轴", fontsize=8.6)
-axr.set_ylabel("主惯性矩（$10^{-3}\ \mathrm{kg\cdot m^2}$）")
+axr.set_ylabel(r"主惯性矩（$10^{-3}\ \mathrm{kg\cdot m^2}$）")
 axr.set_xlim(-0.62, 2.62)
-axr.set_ylim(0, 128)
-axr.set_yticks([0, 40, 80, 120])
+axr.set_ylim(0, 152)
+axr.set_yticks([0, 50, 100, 150])
 clean(axr, grid=True)
-axr.text(0.02, 0.905, "柱：数值积分　虚线：解析式", transform=axr.transAxes,
-         fontsize=8.2, color=MUTED, va="top", ha="left")
+from matplotlib.patches import Patch as _Patch
+from matplotlib.lines import Line2D as _L2D
+axr.legend(handles=[_Patch(facecolor=ACCENT, edgecolor="none", label="数值积分"),
+                    _L2D([0], [0], color=INK, lw=1.3, ls=(0, (4, 2)),
+                         label="解析式 $m(b^2+c^2)/12$")],
+           loc="upper left", handlelength=1.5, borderpad=0.35,
+           labelspacing=0.45, frameon=True, facecolor="white",
+           edgecolor=GRID, framealpha=0.95, fontsize=8.2)
 
 save(fig, "02", "fig02-01")
 
@@ -217,7 +218,7 @@ ax.plot(tt, hist[:, 1], color=ACCENT, lw=1.6, label="$\\omega_2$")
 ax.plot(tt, hist[:, 2], color=GREEN, lw=1.3, label="$\\omega_3$")
 ax.axhline(0, color=GRID, lw=1.0)
 ax.set_xlim(0, T_SIM)
-ax.set_ylim(-7.2, 7.2)
+ax.set_ylim(-7.4, 8.1)
 ax.set_xlabel("时间 $t$（s）")
 ax.set_ylabel("体坐标角速度（rad/s）")
 clean(ax, grid=True)
@@ -236,7 +237,6 @@ clean(ax, grid=True)
 ax.legend(loc="lower right", handlelength=1.5, borderpad=0.3, labelspacing=0.35,
           fontsize=8.2)
 ax.axhline(EPS, color=FAINT, lw=0.9, ls=(0, (4, 3)))
-ax.text(0.15, EPS * 1.30, "$\\varepsilon$", fontsize=9.0, color=MUTED)
 
 fig.subplots_adjust(left=0.100, right=0.975, top=0.955, bottom=0.175)
 save(fig, "02", "fig02-02")

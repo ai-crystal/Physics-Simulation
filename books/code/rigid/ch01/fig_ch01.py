@@ -86,7 +86,7 @@ ax.plot([cc[0], Pp[0]], [cc[1], Pp[1]], color=PURPLE, lw=1.0, ls=(0, (3, 2)), zo
 ax.plot([Pp[0]], [Pp[1]], "o", ms=3.6, color=PURPLE, zorder=9)
 label(ax, Pp[0] - 0.012, Pp[1] + 0.002, "$P$", fs=9.6, color=PURPLE,
       weight="bold", ha="right")
-label(ax, cc[0] + 0.40 * (Pp[0] - cc[0]), cc[1] + 0.40 * (Pp[1] - cc[1]) + 0.030,
+label(ax, cc[0] + 0.32 * (Pp[0] - cc[0]), cc[1] + 0.32 * (Pp[1] - cc[1]) + 0.032,
       "$\\mathbf{R}\\,\\mathbf{x}_\\ell$", fs=8.8, color=PURPLE, rot=-34)
 
 # ---- 左下公式 ----
@@ -109,8 +109,8 @@ for i, (nm, sym, cnt, col) in enumerate(rows):
     label(ax, 0.700, y + 0.002, sym, fs=10.4, ha="left", color=col, weight="bold", z=6)
     label(ax, 0.966, y + 0.002, cnt + " 个", fs=9.2, ha="right", color=MUTED, z=6)
 
-label(ax, 0.548, 0.262, "合计 13 个数，自由度 12", fs=9.4, ha="left", weight="bold")
-label(ax, 0.548, 0.214, "多出的一个由 $|\\mathbf{q}|=1$ 占掉", fs=8.6, ha="left",
+label(ax, 0.548, 0.276, "合计 13 个数，自由度 12", fs=9.4, ha="left", weight="bold")
+label(ax, 0.548, 0.216, "多出的一个由 $|\\mathbf{q}|=1$ 占掉", fs=8.6, ha="left",
       color=MUTED)
 
 ax.add_patch(Rectangle((0.546, 0.070), 0.436, 0.096, facecolor="#F7F8FA",
@@ -138,18 +138,6 @@ def qmul(a, b):
 OM = 8.0 * np.array([0.3, 0.5, 0.81]) / np.linalg.norm([0.3, 0.5, 0.81])   # rad/s，体坐标
 Q0 = np.array([0.4, 0.5, -0.3, 0.7]); Q0 = Q0 / np.linalg.norm(Q0)
 T_TOT = 60.0
-
-
-def run(dt, normalize):
-    n = int(round(T_TOT / dt))
-    q = Q0.copy()
-    hist = np.empty(n)
-    for _ in range(n):
-        q = q + 0.5 * dt * qmul(np.array([0.0, *OM]), q)
-        if normalize:
-            q = q / np.linalg.norm(q)
-        hist[-1] = hist[-1]  # 占位，下面统一写
-    return hist
 
 
 def run_hist(dt, normalize):
