@@ -56,7 +56,9 @@ e_ba = integrate("ba", DT0, T_MAIN) - exact_x1(t_main)
 e_sy = integrate("sync", DT0, T_MAIN) - exact_x1(t_main)
 
 print("dt = 1/960, t = 1 s：ab %+.3e   ba %+.3e   sync %+.3e"
-      % (e_ab[n_main // 2], e_ba[n_main // 2], e_sy[n_main // 2]))
+      % (e_ab[-1], e_ba[-1], e_sy[-1]))
+print("峰值：ab %.3e   ba %.3e   sync %.3e"
+      % (abs(e_ab).max(), abs(e_ba).max(), abs(e_sy).max()))
 
 dts = np.array([1.0 / 120, 1.0 / 240, 1.0 / 480, 1.0 / 960, 1.0 / 1920, 1.0 / 3840])
 ea, eb, es = [], [], []

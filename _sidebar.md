@@ -102,9 +102,70 @@
   - [论文时间线](books/fluid/appendix/timeline.md)
   - [参考文献](books/fluid/appendix/refs.md)
 
+- **06　颗粒、雪与物质点法**
+  - *第一篇  颗粒本身*
+    - [第 1 章 颗粒物质的悖论](books/particle/chapters/ch01.md)
+    - [第 2 章 离散元与接触模型](books/particle/chapters/ch02.md)
+    - [第 3 章 从颗粒到连续体的流变](books/particle/chapters/ch03.md)
+  - *第二篇  物质点法*
+    - [第 4 章 物质点法的基本循环](books/particle/chapters/ch04.md)
+    - [第 5 章 形函数、APIC 与 MLS-MPM](books/particle/chapters/ch05.md)
+    - [第 6 章 雪、沙、泡沫与相变](books/particle/chapters/ch06.md)
+    - [第 7 章 隐式 MPM 与刚度](books/particle/chapters/ch07.md)
+  - *第三篇  耦合与规模*
+    - [第 8 章 颗粒与流体的两相耦合](books/particle/chapters/ch08.md)
+    - [第 9 章 堆积、压实与大规模场景](books/particle/chapters/ch09.md)
+    - [第 10 章 GPU 上的百万颗粒](books/particle/chapters/ch10.md)
+    - [第 11 章 艺术指导与工程案例](books/particle/chapters/ch11.md)
+  - [术语中英对照](books/particle/appendix/glossary.md)
+  - [论文时间线](books/particle/appendix/timeline.md)
+  - [参考文献](books/particle/appendix/refs.md)
+
+- **07　高性能实现与 GPU 并行**
+  - *第一篇  硬件与数据*
+    - [第 1 章 为什么物理模拟离不开并行](books/gpu/chapters/ch01.md)
+    - [第 2 章 数据布局：从 AoS 到 SoA](books/gpu/chapters/ch02.md)
+    - [第 3 章 GPU 架构与编程模型](books/gpu/chapters/ch03.md)
+    - [第 4 章 稀疏网格与 VDB](books/gpu/chapters/ch04.md)
+  - *第二篇  并行算法*
+    - [第 5 章 并行线性求解器](books/gpu/chapters/ch05.md)
+    - [第 6 章 粒子系统的排序、哈希与邻域](books/gpu/chapters/ch06.md)
+    - [第 7 章 图着色、原子操作与无锁结构](books/gpu/chapters/ch07.md)
+    - [第 8 章 多物理场耦合与异步](books/gpu/chapters/ch08.md)
+  - *第三篇  系统与工程*
+    - [第 9 章 实时引擎：固定步长、确定性与回滚](books/gpu/chapters/ch09.md)
+    - [第 10 章 集群与分布式模拟](books/gpu/chapters/ch10.md)
+    - [第 11 章 性能分析、优化与可移植性](books/gpu/chapters/ch11.md)
+  - [术语中英对照](books/gpu/appendix/glossary.md)
+  - [论文时间线](books/gpu/appendix/timeline.md)
+  - [参考文献](books/gpu/appendix/refs.md)
+
+- **08　可微物理与神经模拟**
+  - *第一篇  梯度从哪来*
+    - [第 1 章 正问题与反问题](books/diff/chapters/ch01.md)
+    - [第 2 章 自动微分基础](books/diff/chapters/ch02.md)
+    - [第 3 章 可微物理的三条路线](books/diff/chapters/ch03.md)
+  - *第二篇  穿过各种介质*
+    - [第 4 章 可微刚体与接触](books/diff/chapters/ch04.md)
+    - [第 5 章 可微流体与伴随方程](books/diff/chapters/ch05.md)
+    - [第 6 章 可微柔体与布料](books/diff/chapters/ch06.md)
+    - [第 7 章 长时窗、梯度消失与爆炸](books/diff/chapters/ch07.md)
+  - *第三篇  学习与落地*
+    - [第 8 章 参数、形状与控制](books/diff/chapters/ch08.md)
+    - [第 9 章 神经代理模型与图网络](books/diff/chapters/ch09.md)
+    - [第 10 章 神经算子与物理约束网络](books/diff/chapters/ch10.md)
+    - [第 11 章 混合模拟与 Sim-to-Real](books/diff/chapters/ch11.md)
+    - [第 12 章 可微模拟的工程与边界](books/diff/chapters/ch12.md)
+  - [术语中英对照](books/diff/appendix/glossary.md)
+  - [论文时间线](books/diff/appendix/timeline.md)
+  - [参考文献](books/diff/appendix/refs.md)
+
 - **系列**
   - [01 入门篇 PDF](output/ps-intro.pdf)
   - [02 数学基础 PDF](output/ps-math.pdf)
   - [03 刚体与碰撞 PDF](output/ps-rigid.pdf)
   - [04 柔体、布料与断裂 PDF](output/ps-deform.pdf)
   - [05 流体、烟火与水面 PDF](output/ps-fluid.pdf)
+  - [06 颗粒、雪与物质点法 PDF](output/ps-particle.pdf)
+  - [07 高性能实现与 GPU 并行 PDF](output/ps-gpu.pdf)
+  - [08 可微物理与神经模拟 PDF](output/ps-diff.pdf)

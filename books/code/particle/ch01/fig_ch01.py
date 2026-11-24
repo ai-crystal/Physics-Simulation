@@ -1,221 +1,113 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from figstyle import *
-from scipy.spatial import cKDTree
+from matplotlib.patches import RegularPolygon, Arc
 
 # ============================================================
-# 图 1-1  二维离散元沙堆：真实计算，规模很小
-#   圆盘颗粒，法向弹簧-阻尼 + 切向库仑摩擦（增量弹簧）+ 滚动阻力
-#   地面与侧壁按同样的接触模型处理，否则底层没有摩擦，沙堆会摊成液体
+# 图 1-1  休止角与颗粒形状（示意图）
+#   左：圆颗粒堆，颗粒几乎不能互锁，滚动阻力小
+#   右：棱角颗粒堆，颗粒卡在邻居的凹坑里，滑动前要先挤开邻居
 # ============================================================
-DT = 2.0e-3
-K_N = 1000.0
-K_T = 500.0
-ZETA = 0.30
-GRAV = 1.0
-X0, X1 = 6.0, 58.0
+RNG = np.random.default_rng(7)
+RG = 0.0125          # 颗粒半径（画布坐标）
+Y0 = 0.030           # 地面高度
 
 
-def run_pile(mu, mu_roll, n=420, n_inject=62000, n_settle=34000, seed=1):
+def pile_grains(apex_x, half_base, height, r, seed=1, jitter=0.14):
+    """在三角形区域里按六角格点摆颗粒，返回落在内部的圆心（已抬到地面上）。"""
     rng = np.random.default_rng(seed)
-    xy = np.zeros((0, 2))
-    vel = np.zeros((0, 2))
-    rad = np.zeros(0)
-    omg = np.zeros(0)
-    mass = np.zeros(0)
-    tw = np.zeros((0, 3))          # 地面/左墙/右墙的切向位移
-    tang = np.zeros((0, 2))
-    pairs = np.zeros((0, 2), dtype=int)
-    next_rebuild = 0
-
-    for step in range(n_inject + n_settle):
-        if step < n_inject and len(rad) < n and step % 260 == 0:
-            for _k in range(2):
-                rr = 0.30 + 0.10 * rng.random()
-                near = np.abs(xy[:, 0] - 32.0) < 4.2
-                ltop = float(np.max(xy[near, 1] + rad[near])) if np.any(near) else 0.0
-                ys = max(2.0, ltop + 0.45)
-                xs = 32.0 + rng.uniform(-2.8, 2.8)
-                if np.any(near):
-                    dd = np.hypot(xy[near, 0] - xs, xy[near, 1] - ys)
-                    if np.any(dd < rad[near] + rr + 0.04):
-                        continue
-                xy = np.vstack([xy, [xs, ys]])
-                vel = np.vstack([vel, [0.0, -0.2]])
-                omg = np.append(omg, 0.0)
-                rad = np.append(rad, rr)
-                mass = np.append(mass, np.pi * rr * rr)
-                tang = np.vstack([tang, [0.0, 0.0]])
-                tw = np.vstack([tw, [0.0, 0.0, 0.0]])
-                next_rebuild = step
-
-        if step >= next_rebuild:
-            tree = cKDTree(xy)
-            new_pairs = tree.query_pairs(2 * rad.max() + 0.20, output_type="ndarray")
-            if len(pairs) and len(new_pairs):
-                book = {(int(a), int(b)): tang[q] for q, (a, b) in enumerate(pairs)}
-                tang = np.array([book.get((int(a), int(b)), (0.0, 0.0)) for a, b in new_pairs])
-            else:
-                tang = np.zeros((len(new_pairs), 2))
-            pairs = new_pairs
-            next_rebuild = step + 20
-
-        N = len(rad)
-        acc = np.zeros((N, 2))
-        alp = np.zeros(N)
-        cpar = 2.0 * ZETA * np.sqrt(K_N * mass)
-
-        # ---------- 颗粒-颗粒 ----------
-        if len(pairs):
-            i, j = pairs[:, 0], pairs[:, 1]
-            d = xy[j] - xy[i]
-            dist = np.linalg.norm(d, axis=1)
-            sumr = rad[i] + rad[j]
-            hit = dist < sumr
-            if np.any(hit):
-                i, j, d, dist, sumr = i[hit], j[hit], d[hit], dist[hit], sumr[hit]
-                tid = np.nonzero(hit)[0]
-                nrm = d / dist[:, None]
-                delta = sumr - dist
-                vrel = vel[j] - vel[i]
-                vn = np.sum(vrel * nrm, axis=1)
-                mn = mass[i] * mass[j] / (mass[i] + mass[j])
-                cn = 2.0 * ZETA * np.sqrt(K_N * mn)
-
-                Fn = np.maximum(K_N * delta - cn * vn, 0.0)
-
-                # 接触点速度要带自转，否则摩擦力矩只驱动自转、不受约束
-                r_i = rad[i][:, None] * nrm
-                r_j = -rad[j][:, None] * nrm
-                vc = (vel[j] + omg[j][:, None] * np.stack([-r_j[:, 1], r_j[:, 0]], axis=1)
-                      - vel[i] - omg[i][:, None] * np.stack([-r_i[:, 1], r_i[:, 0]], axis=1))
-                vn_c = np.sum(vc * nrm, axis=1)
-                vt = vc - vn_c[:, None] * nrm
-                tang[tid] += vt * DT
-                tvec = tang[tid] - np.sum(tang[tid] * nrm, axis=1)[:, None] * nrm
-                tang[tid] = tvec
-                tmag = np.linalg.norm(tvec, axis=1)
-                cap = mu * Fn
-                scale = np.where(tmag > 1e-12,
-                                 np.minimum(1.0, cap / np.maximum(K_T * tmag, 1e-12)), 0.0)
-                tang[tid] = tvec * scale[:, None]
-                tdir = np.where(tmag[:, None] > 1e-12, tvec / np.maximum(tmag, 1e-12)[:, None], 0.0)
-                Ftvec = (K_T * tmag * scale)[:, None] * tdir
-
-                f_on_i = -Fn[:, None] * nrm + Ftvec
-                np.add.at(acc, i, f_on_i / mass[i, None])
-                np.add.at(acc, j, -f_on_i / mass[j, None])
-
-                T_i = r_i[:, 0] * Ftvec[:, 1] - r_i[:, 1] * Ftvec[:, 0]
-                T_j = rad[j] / rad[i] * T_i
-                np.add.at(alp, i, T_i / (0.5 * mass[i] * rad[i] ** 2))
-                np.add.at(alp, j, T_j / (0.5 * mass[j] * rad[j] ** 2))
-
-                dw = omg[i] - omg[j]
-                Ii = 0.5 * mass[i] * rad[i] ** 2
-                Ij = 0.5 * mass[j] * rad[j] ** 2
-                Ieff = Ii * Ij / (Ii + Ij)
-                Mr = np.minimum(mu_roll * 0.5 * sumr * Fn,
-                                Ieff * np.abs(dw) / DT)
-                Mr = -np.sign(dw) * Mr
-                np.add.at(alp, i, Mr / (0.5 * mass[i] * rad[i] ** 2))
-                np.add.at(alp, j, -Mr / (0.5 * mass[j] * rad[j] ** 2))
-
-        # ---------- 墙：地面、左墙、右墙，法向 n 与切向 t 显式给出 ----------
-        walls = [
-            (np.array([0.0, 1.0]), np.array([1.0, 0.0]),
-             np.maximum(rad - xy[:, 1], 0.0), xy[:, 1] <= rad + 1e-9, 0),
-            (np.array([1.0, 0.0]), np.array([0.0, 1.0]),
-             np.maximum(rad - (xy[:, 0] - X0), 0.0), xy[:, 0] - rad <= X0 + 1e-9, 1),
-            (np.array([-1.0, 0.0]), np.array([0.0, 1.0]),
-             np.maximum(rad - (X1 - xy[:, 0]), 0.0), xy[:, 0] + rad >= X1 - 1e-9, 2),
-        ]
-        for nw, tw_dir, pen, msk, kk in walls:
-            if not np.any(msk):
-                continue
-            idx = np.nonzero(msk)[0]
-            r_w = -nw[None, :] * rad[idx][:, None]
-            vn = vel[idx] @ nw
-            Fnw = np.maximum(K_N * pen[idx] - cpar[idx] * vn, 0.0)
-            # 接触点速度 = 平动 + ω×r
-            vc = vel[idx] + omg[idx][:, None] * np.stack([-r_w[:, 1], r_w[:, 0]], axis=1)
-            vt = vc @ tw_dir
-            tw[idx, kk] += vt * DT
-            xw = np.clip(tw[idx, kk], -mu * Fnw / K_T, mu * Fnw / K_T)
-            tw[idx, kk] = xw
-            F_t = (-K_T * xw)[:, None] * tw_dir[None, :]
-            acc[idx] += nw[None, :] * (Fnw / mass[idx])[:, None]
-            acc[idx] += F_t / mass[idx][:, None]
-            T_w = r_w[:, 0] * F_t[:, 1] - r_w[:, 1] * F_t[:, 0]
-            Iw = 0.5 * mass[idx] * rad[idx] ** 2
-            Mw = -np.sign(omg[idx]) * np.minimum(mu_roll * rad[idx] * Fnw,
-                                                 Iw * np.abs(omg[idx]) / DT)
-            alp[idx] += (T_w + Mw) / (0.5 * mass[idx] * rad[idx] ** 2)
-
-        acc[:, 1] -= GRAV
-        vel += acc * DT
-        omg += alp * DT
-        omg *= 0.9995
-        xy += vel * DT
-
-        # 只做位置兜底，速度交给接触力
-        xy[:, 1] = np.maximum(xy[:, 1], rad)
-        xy[:, 0] = np.clip(xy[:, 0], X0 + rad, X1 - rad)
-    return xy, rad
+    pts = []
+    d = 2.0 * r * 1.04
+    dy = d * 0.866
+    y = r * 1.05
+    row = 0
+    while y < height - r * 0.3:
+        frac = (height - y) / height
+        half = half_base * frac
+        n = int(2 * half / d) + 1
+        xs = np.linspace(apex_x - half + r, apex_x + half - r, max(n, 1))
+        if row % 2:
+            xs = xs + d * 0.5
+        for x in xs:
+            if abs(x - apex_x) < half - r * 0.95:
+                px = x + rng.normal(0, jitter * r)
+                py = y + rng.normal(0, jitter * r)
+                if py > r * 0.5:
+                    pts.append((px, Y0 + py))
+        y += dy
+        row += 1
+    return np.array(pts)
 
 
-def repose_angle(xy, rad, binw=1.0):
-    """按竖条取自由表面，去掉顶部圆角与两端坡脚后线性拟合。"""
-    xs = np.arange(xy[:, 0].min() - rad.max(), xy[:, 0].max() + rad.max(), binw)
-    surf = []
-    for a in xs:
-        m = (xy[:, 0] >= a) & (xy[:, 0] < a + binw)
-        if np.any(m):
-            surf.append((a + binw / 2, np.max(xy[m, 1] + rad[m])))
-    surf = np.array(surf)
-    apex = int(np.argmax(surf[:, 1]))
-    top = surf[apex, 1]
-    angs, fits = [], []
-    for lo, hi in ((0, apex), (apex + 1, len(surf))):
-        sel = surf[lo:hi, :]
-        sel = sel[(sel[:, 1] > 0.25 * top) & (sel[:, 1] < 0.80 * top)]
-        if len(sel) < 5:
-            continue
-        a1, b1 = np.polyfit(sel[:, 0], sel[:, 1], 1)
-        angs.append(np.degrees(np.arctan(abs(a1))))
-        fits.append((a1, b1, sel[:, 0].min(), sel[:, 0].max()))
-    return (float(np.mean(angs)) if angs else 0.0), surf, fits
+def draw_pile(ax, apex_x, half_base, height, round_grains=True, seed=3):
+    pts = pile_grains(apex_x, half_base, height, RG, seed=seed)
+    for x, y in pts:
+        if round_grains:
+            ax.add_patch(Circle((x, y), RG, facecolor="#F2DFC0", edgecolor="#8E7248",
+                                lw=0.4, zorder=3))
+        else:
+            nv = 4 + int(RNG.integers(0, 3))
+            ax.add_patch(RegularPolygon((x, y), nv, radius=RG * 1.10,
+                                        orientation=RNG.uniform(0, 2 * np.pi),
+                                        facecolor="#EFE0C4", edgecolor="#8E7248",
+                                        lw=0.45, zorder=3))
+    return pts
 
 
-pile_a = run_pile(0.25, 0.10, seed=11)
-ang_a, surf_a, fit_a = repose_angle(*pile_a)
-pile_b = run_pile(0.60, 0.40, seed=23)
-ang_b, surf_b, fit_b = repose_angle(*pile_b)
-print("休止角 A = %.1f deg   B = %.1f deg" % (ang_a, ang_b))
-print("top A %.2f  B %.2f" % (surf_a[:, 1].max(), surf_b[:, 1].max()))
+def angle_arc(ax, toe, slope_deg, rad, text):
+    ax.add_patch(Arc(toe, 2 * rad, 2 * rad, theta1=0, theta2=slope_deg,
+                     color=MUTED, lw=0.9, zorder=6))
+    ax.text(toe[0] - 0.016, toe[1] + 0.006, text, fontsize=9.0, color=ACCENT,
+            ha="right", va="bottom", zorder=7)
 
-fig, axs = plt.subplots(1, 2, figsize=(6.75, 3.05))
-for ax, (xy, rad), fit, ang, name, mr in [
-        (axs[0], pile_a[0:2], fit_a, ang_a, "摩擦系数 0.25", 0.10),
-        (axs[1], pile_b[0:2], fit_b, ang_b, "摩擦系数 0.60", 0.40)]:
+
+fig, axs = plt.subplots(1, 2, figsize=(6.8, 2.75))
+for ax in axs:
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 0.425)
     ax.set_aspect("equal")
     ax.axis("off")
-    ax.fill_between([X0, X1], [-1.2, -1.2], [0, 0], color="#E7E2D8", zorder=1, lw=0)
-    for (x, y), r in zip(xy, rad):
-        ax.add_patch(Circle((x, y), r, facecolor="#F2DFC0", edgecolor="#8E7248",
-                            lw=0.45, zorder=3))
-    ax.plot([X0, X1], [0, 0], color=INK, lw=1.5, zorder=4, solid_capstyle="butt")
-    for a1, b1, xa, xb in fit:
-        xx = np.array([xa, xb])
-        ax.plot(xx, a1 * xx + b1, color=ACCENT, lw=1.4, ls=(0, (5, 2)), zorder=6)
-    ax.set_xlim(X0 - 1.2, X1 + 1.2)
-    ax.set_ylim(-1.3, 22)
-    ax.text(0.02, 0.97, name, transform=ax.transAxes, ha="left", va="top",
-            fontsize=9.4, color=INK)
-    ax.text(0.02, 0.885, "滚动阻力系数 %.2f" % mr, transform=ax.transAxes, ha="left",
-            va="top", fontsize=8.3, color=MUTED)
-    ax.text(0.975, 0.97, "%.1f°" % ang, transform=ax.transAxes, ha="right", va="top",
-            fontsize=13, color=ACCENT, weight="bold")
+    ax.add_patch(Rectangle((0.03, 0.006), 0.94, 0.024, facecolor="#E7E2D8",
+                           edgecolor="none", zorder=1))
+    ax.plot([0.03, 0.97], [Y0, Y0], color=INK, lw=1.2, zorder=2,
+            solid_capstyle="butt")
+
+# ---------- 左：圆颗粒 ----------
+ax = axs[0]
+HB, H = 0.42, 0.42 * np.tan(np.deg2rad(20.0))
+draw_pile(ax, 0.50, HB, H, round_grains=True, seed=11)
+ax.plot([0.50 - HB, 0.50], [Y0, Y0 + H], color=ACCENT, lw=1.3, ls=(0, (5, 2)),
+        zorder=6)
+angle_arc(ax, (0.50 - HB, Y0), 20.0, 0.075, "约 20°")
+gx = 0.50 - 0.26
+gy = Y0 + 0.26 * np.tan(np.deg2rad(20.0)) + RG * 2.2
+ax.add_patch(Circle((gx, gy), RG * 1.5, facecolor="white", edgecolor=ACCENT,
+                    lw=1.0, zorder=8))
+ax.add_patch(Arc((gx, gy), 0.062, 0.062, theta1=200, theta2=330, color=ACCENT,
+                 lw=1.0, zorder=9))
+arrow(ax, (gx + 0.031, gy - 0.008), (gx + 0.036, gy - 0.040), color=ACCENT,
+      lw=0.9, ms=6)
+ax.text(0.02, 0.408, "圆颗粒", fontsize=9.6, color=INK, ha="left", va="top")
+ax.text(0.02, 0.356, "滚动阻力小，坡面上留不住", fontsize=8.2, color=MUTED,
+        ha="left", va="top")
+
+# ---------- 右：棱角颗粒 ----------
+ax = axs[1]
+HB2, H2 = 0.40, 0.40 * np.tan(np.deg2rad(33.0))
+draw_pile(ax, 0.50, HB2, H2, round_grains=False, seed=23)
+ax.plot([0.50 - HB2, 0.50], [Y0, Y0 + H2], color=ACCENT, lw=1.3, ls=(0, (5, 2)),
+        zorder=6)
+angle_arc(ax, (0.50 - HB2, Y0), 33.0, 0.065, "约 33°")
+cx, cy = 0.50 - 0.10, Y0 + H2 * 0.46
+ax.add_patch(Circle((cx, cy), RG * 3.0, facecolor="none", edgecolor=BLUE, lw=0.95,
+                    ls=(0, (2, 2)), zorder=9))
+arrow(ax, (cx - RG * 3.4, cy + RG * 1.2), (cx - RG * 3.4, cy + RG * 3.4),
+      color=BLUE, lw=0.85, ms=6, z=9)
+arrow(ax, (cx + RG * 0.9, cy + RG * 1.4), (cx + RG * 0.9, cy + RG * 3.6),
+      color=BLUE, lw=0.85, ms=6, z=9)
+ax.text(0.02, 0.408, "棱角颗粒", fontsize=9.6, color=INK, ha="left", va="top")
+ax.text(0.02, 0.356, "互相卡住，滑动前要先挤开邻居", fontsize=8.2, color=MUTED,
+        ha="left", va="top")
 
 save(fig, "01", "fig01-01")
 
@@ -248,31 +140,32 @@ ax.set_ylabel("深度 $z$  (m)")
 ax.set_xlim(0, 46)
 ax.set_ylim(3.12, -0.06)
 clean(ax, grid=True)
-ax.legend(loc="lower right", handlelength=1.5, labelspacing=0.32, borderpad=0.15,
-          bbox_to_anchor=(0.98, 0.02))
+ax.legend(loc="upper right", handlelength=1.5, labelspacing=0.32, borderpad=0.15,
+          bbox_to_anchor=(0.985, 0.985))
 
 ax = axs[1]
-H = np.linspace(0, 3.0, 400)
+Hh = np.linspace(0, 3.0, 400)
 for mu, c in zip(MUS, COLS):
     lam = 2 * mu * KK / R
-    s = RHOB * G / lam * (1 - np.exp(-lam * H)) / 1000
-    ax.plot(H, s, color=c, lw=1.6)
+    s = RHOB * G / lam * (1 - np.exp(-lam * Hh)) / 1000
+    ax.plot(Hh, s, color=c, lw=1.6)
     ax.axhline(RHOB * G / lam / 1000, color=c, lw=0.8, ls=(0, (2, 2)), alpha=0.55)
     ax.plot([1 / lam], [RHOB * G / lam * (1 - np.exp(-1)) / 1000], "o", ms=3.6,
             color=c, zorder=5)
-ax.annotate("虚线为饱和压力\n圆点对应 $H=\\lambda^{-1}$", xy=(1.10, 11.6),
-            xytext=(1.62, 7.4), fontsize=8.2, color=MUTED,
+ax.annotate("虚线为饱和压力\n圆点对应 $H=\\lambda^{-1}$", xy=(1.32, 9.6),
+            xytext=(1.52, 2.2), fontsize=8.2, color=MUTED,
             arrowprops=dict(arrowstyle="-|>", color=FAINT, lw=0.8,
-                            connectionstyle="arc3,rad=0.22"))
+                            connectionstyle="arc3,rad=-0.25"))
 ax.set_xlabel("装料高度 $H$  (m)")
 ax.set_ylabel("仓底压力 (kPa)")
 ax.set_xlim(0, 3)
 ax.set_ylim(0, 15.0)
 clean(ax, grid=True)
-ax.text(0.03, 0.95, "装料超过约 1 m 后压力几乎不再上升", transform=ax.transAxes,
-        fontsize=8.2, color=MUTED, va="top")
+ax.text(0.04, 0.055, "装料超过约 1 m 后压力几乎不再上升", transform=ax.transAxes,
+        fontsize=8.2, color=MUTED, va="bottom")
 
 save(fig, "01", "fig01-02")
 
 lam4 = 2 * 0.4 * KK / R
-print("lambda^-1 (mu=0.4) = %.3f m, 饱和压力 %.0f Pa" % (1 / lam4, RHOB * G / lam4))
+print("lambda^-1 (mu=0.4) = %.3f m, 饱和压力 %.0f Pa, 1m 处 %.0f Pa" % (
+    1 / lam4, RHOB * G / lam4, RHOB * G / lam4 * (1 - np.exp(-lam4))))
