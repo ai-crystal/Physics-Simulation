@@ -81,8 +81,30 @@
   - [论文时间线](books/deform/appendix/timeline.md)
   - [参考文献](books/deform/appendix/refs.md)
 
+- **05　流体、烟火与水面**
+  - *第一篇  方程与网格*
+    - [第 1 章 流体的两种看法](books/fluid/chapters/ch01.md)
+    - [第 2 章 纳维-斯托克斯方程逐项拆解](books/fluid/chapters/ch02.md)
+    - [第 3 章 网格法：投影与压力泊松](books/fluid/chapters/ch03.md)
+    - [第 4 章 平流：耗散、振铃与补偿](books/fluid/chapters/ch04.md)
+  - *第二篇  粒子与界面*
+    - [第 5 章 涡量、湍流与涡粒子](books/fluid/chapters/ch05.md)
+    - [第 6 章 自由表面：Level Set、VOF 与粒子](books/fluid/chapters/ch06.md)
+    - [第 7 章 SPH：核函数、压力与稳定性](books/fluid/chapters/ch07.md)
+    - [第 8 章 FLIP、PIC 与 APIC](books/fluid/chapters/ch08.md)
+  - *第三篇  现象与工程*
+    - [第 9 章 粘性、表面张力与多相流](books/fluid/chapters/ch09.md)
+    - [第 10 章 烟、火与爆炸](books/fluid/chapters/ch10.md)
+    - [第 11 章 水面、海浪与白水](books/fluid/chapters/ch11.md)
+    - [第 12 章 固流耦合与交互](books/fluid/chapters/ch12.md)
+    - [第 13 章 精度、稳定性与性能](books/fluid/chapters/ch13.md)
+  - [术语中英对照](books/fluid/appendix/glossary.md)
+  - [论文时间线](books/fluid/appendix/timeline.md)
+  - [参考文献](books/fluid/appendix/refs.md)
+
 - **系列**
   - [01 入门篇 PDF](output/ps-intro.pdf)
   - [02 数学基础 PDF](output/ps-math.pdf)
   - [03 刚体与碰撞 PDF](output/ps-rigid.pdf)
   - [04 柔体、布料与断裂 PDF](output/ps-deform.pdf)
+  - [05 流体、烟火与水面 PDF](output/ps-fluid.pdf)

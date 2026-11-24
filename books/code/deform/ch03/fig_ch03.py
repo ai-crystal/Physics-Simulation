@@ -138,10 +138,8 @@ ax.set_xticks([0, 32, 64, 97])
 ax.set_yticks([0, 32, 64, 97])
 clean(ax, grid=False, spines=("left", "bottom"))
 
-ax.annotate("主对角", xy=(36, 36), xytext=(9, 58), fontsize=8.8, color=INK,
-            arrowprops=dict(arrowstyle="->", color=MUTED, lw=0.8,
-                            connectionstyle="arc3,rad=-0.25"))
-label(ax, 2, 24, "带宽 17", fs=8.6, color=MUTED, ha="left", va="bottom")
-label(ax, 60, 8, "非零元 %d 个，占 %.1f%%" % (nnz, 100 * nnz / nd ** 2),
-      fs=8.8, color=MUTED, ha="left", va="center")
+label(ax, 40, 4, "棕色方块：非零元 %d 个，占 %.1f%%" % (nnz, 100 * nnz / nd ** 2),
+      fs=8.6, color=MUTED, ha="left", va="top")
+label(ax, 40, 14, "细线：带宽 $\pm17$ 的边界", fs=8.6, color=MUTED,
+      ha="left", va="top")
 save(fig, "03", "fig03-02")
