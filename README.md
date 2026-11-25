@@ -10,8 +10,6 @@
 >
 > 单册直达：`https://ai-crystal.github.io/Physics-Simulation/#/books/intro/chapters/ch01`
 
-![封面](books/intro/images/cover_front.jpg)
-
 ## 八册一览
 
 | 册 | 内容 | 章 | 页数 | 在线阅读 | PDF |
