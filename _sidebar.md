@@ -1,171 +1,33 @@
-- [开始阅读](books/intro/chapters/ch01.md)
-- [系列首页](README.md)
+- [系列首页](/README.md)
 
 - **01　入门篇**
-  - *第一篇  从世界到方程*
-    - [第 1 章 从一片下落的叶子说起](books/intro/chapters/ch01.md)
-    - [第 2 章 一条抛物线的四百年](books/intro/chapters/ch02.md)
-    - [第 3 章 当方程解不出来](books/intro/chapters/ch03.md)
-  - *第二篇  离散化的几条路*
-    - [第 4 章 把连续的世界切成有限块](books/intro/chapters/ch04.md)
-    - [第 5 章 刚体：从台球到倒塌的塔](books/intro/chapters/ch05.md)
-    - [第 6 章 布料与柔体：会皱的世界](books/intro/chapters/ch06.md)
-    - [第 7 章 流体：烟、水与火](books/intro/chapters/ch07.md)
-    - [第 8 章 断裂、颗粒与雪](books/intro/chapters/ch08.md)
-  - *第三篇  规模、速度与反问题*
-    - [第 9 章 让模拟跑得动](books/intro/chapters/ch09.md)
-    - [第 10 章 可微物理：让模拟反过来用](books/intro/chapters/ch10.md)
-    - [第 11 章 学习的介入：神经模拟器](books/intro/chapters/ch11.md)
-    - [第 12 章 今天的地图与明天的边界](books/intro/chapters/ch12.md)
-  - [术语中英对照](books/intro/appendix/glossary.md)
-  - [论文时间线](books/intro/appendix/timeline.md)
-  - [参考文献](books/intro/appendix/refs.md)
+  - [本册首页](/books/intro/README.md)
+  - <a href="/output/ps-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **02　数学基础**
-  - *第一篇  空间与场*
-    - [第 1 章 模拟器里到底有哪些数学](books/math/chapters/ch01.md)
-    - [第 2 章 向量、矩阵与空间变换](books/math/chapters/ch02.md)
-    - [第 3 章 张量：应变、应力与守恒律](books/math/chapters/ch03.md)
-  - *第二篇  方程与求解*
-    - [第 4 章 常微分方程与时间积分](books/math/chapters/ch04.md)
-    - [第 5 章 偏微分方程：热、波与流](books/math/chapters/ch05.md)
-    - [第 6 章 大规模线性系统](books/math/chapters/ch06.md)
-    - [第 7 章 非线性方程与约束](books/math/chapters/ch07.md)
-    - [第 8 章 变分原理与最优化](books/math/chapters/ch08.md)
-  - *第三篇  离散与实现*
-    - [第 9 章 有限元数学：弱形式与形函数](books/math/chapters/ch09.md)
-    - [第 10 章 离散微分几何](books/math/chapters/ch10.md)
-    - [第 11 章 概率、估计与反问题](books/math/chapters/ch11.md)
-    - [第 12 章 数值实现中的数学](books/math/chapters/ch12.md)
-  - [术语中英对照](books/math/appendix/glossary.md)
-  - [论文时间线](books/math/appendix/timeline.md)
-  - [参考文献](books/math/appendix/refs.md)
+  - [本册首页](/books/math/README.md)
+  - <a href="/output/ps-math.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **03　刚体与碰撞**
-  - *第一篇  运动与碰撞*
-    - [第 1 章 刚体的六个自由度](books/rigid/chapters/ch01.md)
-    - [第 2 章 惯性张量与旋转动力学](books/rigid/chapters/ch02.md)
-    - [第 3 章 从牛顿到冲量](books/rigid/chapters/ch03.md)
-    - [第 4 章 碰撞检测：从包围盒到 GJK](books/rigid/chapters/ch04.md)
-  - *第二篇  接触与约束*
-    - [第 5 章 接触求解：互补与投影](books/rigid/chapters/ch05.md)
-    - [第 6 章 摩擦：库仑、锥与各向异性](books/rigid/chapters/ch06.md)
-    - [第 7 章 堆叠、抖动与稳定化](books/rigid/chapters/ch07.md)
-    - [第 8 章 关节、马达与约束](books/rigid/chapters/ch08.md)
-  - *第三篇  工程与耦合*
-    - [第 9 章 连续碰撞与高速旋转](books/rigid/chapters/ch09.md)
-    - [第 10 章 刚体与流体、布料的耦合](books/rigid/chapters/ch10.md)
-    - [第 11 章 实时引擎的工程做法](books/rigid/chapters/ch11.md)
-    - [第 12 章 刚体模拟的失败模式](books/rigid/chapters/ch12.md)
-  - [术语中英对照](books/rigid/appendix/glossary.md)
-  - [论文时间线](books/rigid/appendix/timeline.md)
-  - [参考文献](books/rigid/appendix/refs.md)
+  - [本册首页](/books/rigid/README.md)
+  - <a href="/output/ps-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **04　柔体、布料与断裂**
-  - *第一篇  力的离散化*
-    - [第 1 章 从一根弹簧开始](books/deform/chapters/ch01.md)
-    - [第 2 章 位置动力学](books/deform/chapters/ch02.md)
-    - [第 3 章 从三角形到四面体](books/deform/chapters/ch03.md)
-    - [第 4 章 超弹、粘弹与塑性](books/deform/chapters/ch04.md)
-  - *第二篇  求解与结构*
-    - [第 5 章 隐式积分与牛顿迭代](books/deform/chapters/ch05.md)
-    - [第 6 章 投影动力学与局部-全局](books/deform/chapters/ch06.md)
-    - [第 7 章 布料：弯曲、褶皱与尺度](books/deform/chapters/ch07.md)
-    - [第 8 章 壳、杆与毛发](books/deform/chapters/ch08.md)
-  - *第三篇  碰撞与破坏*
-    - [第 9 章 自碰撞与连续碰撞](books/deform/chapters/ch09.md)
-    - [第 10 章 断裂、撕裂与破碎](books/deform/chapters/ch10.md)
-    - [第 11 章 降维、子空间与实时柔体](books/deform/chapters/ch11.md)
-    - [第 12 章 柔体模拟的验证与艺术控制](books/deform/chapters/ch12.md)
-  - [术语中英对照](books/deform/appendix/glossary.md)
-  - [论文时间线](books/deform/appendix/timeline.md)
-  - [参考文献](books/deform/appendix/refs.md)
+  - [本册首页](/books/deform/README.md)
+  - <a href="/output/ps-deform.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **05　流体、烟火与水面**
-  - *第一篇  方程与网格*
-    - [第 1 章 流体的两种看法](books/fluid/chapters/ch01.md)
-    - [第 2 章 纳维-斯托克斯方程逐项拆解](books/fluid/chapters/ch02.md)
-    - [第 3 章 网格法：投影与压力泊松](books/fluid/chapters/ch03.md)
-    - [第 4 章 平流：耗散、振铃与补偿](books/fluid/chapters/ch04.md)
-  - *第二篇  粒子与界面*
-    - [第 5 章 涡量、湍流与涡粒子](books/fluid/chapters/ch05.md)
-    - [第 6 章 自由表面：Level Set、VOF 与粒子](books/fluid/chapters/ch06.md)
-    - [第 7 章 SPH：核函数、压力与稳定性](books/fluid/chapters/ch07.md)
-    - [第 8 章 FLIP、PIC 与 APIC](books/fluid/chapters/ch08.md)
-  - *第三篇  现象与工程*
-    - [第 9 章 粘性、表面张力与多相流](books/fluid/chapters/ch09.md)
-    - [第 10 章 烟、火与爆炸](books/fluid/chapters/ch10.md)
-    - [第 11 章 水面、海浪与白水](books/fluid/chapters/ch11.md)
-    - [第 12 章 固流耦合与交互](books/fluid/chapters/ch12.md)
-    - [第 13 章 精度、稳定性与性能](books/fluid/chapters/ch13.md)
-  - [术语中英对照](books/fluid/appendix/glossary.md)
-  - [论文时间线](books/fluid/appendix/timeline.md)
-  - [参考文献](books/fluid/appendix/refs.md)
+  - [本册首页](/books/fluid/README.md)
+  - <a href="/output/ps-fluid.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **06　颗粒、雪与物质点法**
-  - *第一篇  颗粒本身*
-    - [第 1 章 颗粒物质的悖论](books/particle/chapters/ch01.md)
-    - [第 2 章 离散元与接触模型](books/particle/chapters/ch02.md)
-    - [第 3 章 从颗粒到连续体的流变](books/particle/chapters/ch03.md)
-  - *第二篇  物质点法*
-    - [第 4 章 物质点法的基本循环](books/particle/chapters/ch04.md)
-    - [第 5 章 形函数、APIC 与 MLS-MPM](books/particle/chapters/ch05.md)
-    - [第 6 章 雪、沙、泡沫与相变](books/particle/chapters/ch06.md)
-    - [第 7 章 隐式 MPM 与刚度](books/particle/chapters/ch07.md)
-  - *第三篇  耦合与规模*
-    - [第 8 章 颗粒与流体的两相耦合](books/particle/chapters/ch08.md)
-    - [第 9 章 堆积、压实与大规模场景](books/particle/chapters/ch09.md)
-    - [第 10 章 GPU 上的百万颗粒](books/particle/chapters/ch10.md)
-    - [第 11 章 艺术指导与工程案例](books/particle/chapters/ch11.md)
-  - [术语中英对照](books/particle/appendix/glossary.md)
-  - [论文时间线](books/particle/appendix/timeline.md)
-  - [参考文献](books/particle/appendix/refs.md)
+  - [本册首页](/books/particle/README.md)
+  - <a href="/output/ps-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **07　高性能实现与 GPU 并行**
-  - *第一篇  硬件与数据*
-    - [第 1 章 为什么物理模拟离不开并行](books/gpu/chapters/ch01.md)
-    - [第 2 章 数据布局：从 AoS 到 SoA](books/gpu/chapters/ch02.md)
-    - [第 3 章 GPU 架构与编程模型](books/gpu/chapters/ch03.md)
-    - [第 4 章 稀疏网格与 VDB](books/gpu/chapters/ch04.md)
-  - *第二篇  并行算法*
-    - [第 5 章 并行线性求解器](books/gpu/chapters/ch05.md)
-    - [第 6 章 粒子系统的排序、哈希与邻域](books/gpu/chapters/ch06.md)
-    - [第 7 章 图着色、原子操作与无锁结构](books/gpu/chapters/ch07.md)
-    - [第 8 章 多物理场耦合与异步](books/gpu/chapters/ch08.md)
-  - *第三篇  系统与工程*
-    - [第 9 章 实时引擎：固定步长、确定性与回滚](books/gpu/chapters/ch09.md)
-    - [第 10 章 集群与分布式模拟](books/gpu/chapters/ch10.md)
-    - [第 11 章 性能分析、优化与可移植性](books/gpu/chapters/ch11.md)
-  - [术语中英对照](books/gpu/appendix/glossary.md)
-  - [论文时间线](books/gpu/appendix/timeline.md)
-  - [参考文献](books/gpu/appendix/refs.md)
+  - [本册首页](/books/gpu/README.md)
+  - <a href="/output/ps-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
 
 - **08　可微物理与神经模拟**
-  - *第一篇  梯度从哪来*
-    - [第 1 章 正问题与反问题](books/diff/chapters/ch01.md)
-    - [第 2 章 自动微分基础](books/diff/chapters/ch02.md)
-    - [第 3 章 可微物理的三条路线](books/diff/chapters/ch03.md)
-  - *第二篇  穿过各种介质*
-    - [第 4 章 可微刚体与接触](books/diff/chapters/ch04.md)
-    - [第 5 章 可微流体与伴随方程](books/diff/chapters/ch05.md)
-    - [第 6 章 可微柔体与布料](books/diff/chapters/ch06.md)
-    - [第 7 章 长时窗、梯度消失与爆炸](books/diff/chapters/ch07.md)
-  - *第三篇  学习与落地*
-    - [第 8 章 参数、形状与控制](books/diff/chapters/ch08.md)
-    - [第 9 章 神经代理模型与图网络](books/diff/chapters/ch09.md)
-    - [第 10 章 神经算子与物理约束网络](books/diff/chapters/ch10.md)
-    - [第 11 章 混合模拟与 Sim-to-Real](books/diff/chapters/ch11.md)
-    - [第 12 章 可微模拟的工程与边界](books/diff/chapters/ch12.md)
-  - [术语中英对照](books/diff/appendix/glossary.md)
-  - [论文时间线](books/diff/appendix/timeline.md)
-  - [参考文献](books/diff/appendix/refs.md)
-
-- **系列**
-  - [01 入门篇 PDF](output/ps-intro.pdf)
-  - [02 数学基础 PDF](output/ps-math.pdf)
-  - [03 刚体与碰撞 PDF](output/ps-rigid.pdf)
-  - [04 柔体、布料与断裂 PDF](output/ps-deform.pdf)
-  - [05 流体、烟火与水面 PDF](output/ps-fluid.pdf)
-  - [06 颗粒、雪与物质点法 PDF](output/ps-particle.pdf)
-  - [07 高性能实现与 GPU 并行 PDF](output/ps-gpu.pdf)
-  - [08 可微物理与神经模拟 PDF](output/ps-diff.pdf)
+  - [本册首页](/books/diff/README.md)
+  - <a href="/output/ps-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
