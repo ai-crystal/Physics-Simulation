@@ -77,7 +77,10 @@
 
     window.$docsify = {
       name: '物理模拟技术 · 八册',
-      nameLink: '/',
+      nameLink: (function () {
+        var p = location.pathname.replace(/index\.html$/, '');
+        return p.charAt(p.length - 1) === '/' ? p : p + '/';
+      })(),
       homepage: 'README.md',
       loadSidebar: true,
       subMaxLevel: 2,
