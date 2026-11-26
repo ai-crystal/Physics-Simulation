@@ -4,7 +4,7 @@
 
 本册讲让梯度穿过时间。
 
-共 12 章 · 103 页
+共 12 章 · 145 页
 
 [从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/v8-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
 

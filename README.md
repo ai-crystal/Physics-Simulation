@@ -20,8 +20,8 @@
 | 04 | [柔体、布料与断裂](books/deform/README.md) | 会皱、会断、会回弹 | 152 | [阅读](books/deform/README.md) | <a href="output/v4-deform.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
 | 05 | [流体、烟火与水面](books/fluid/README.md) | 把连续介质装进格子 | 110 | [阅读](books/fluid/README.md) | <a href="output/v5-fluid.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
 | 06 | [颗粒、雪与物质点法](books/particle/README.md) | 沙、雪、泡沫与岩浆 | 132 | [阅读](books/particle/README.md) | <a href="output/v6-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 07 | [高性能实现与 GPU 并行](books/gpu/README.md) | 一帧十六毫秒的预算 | 92 | [阅读](books/gpu/README.md) | <a href="output/v7-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 08 | [可微物理与神经模拟](books/diff/README.md) | 让梯度穿过时间 | 103 | [阅读](books/diff/README.md) | <a href="output/v8-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 07 | [高性能实现与 GPU 并行](books/gpu/README.md) | 一帧十六毫秒的预算 | 122 | [阅读](books/gpu/README.md) | <a href="output/v7-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 08 | [可微物理与神经模拟](books/diff/README.md) | 让梯度穿过时间 | 145 | [阅读](books/diff/README.md) | <a href="output/v8-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
 
 ## 怎么读
 

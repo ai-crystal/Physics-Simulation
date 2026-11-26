@@ -4,7 +4,7 @@
 
 本册讲一帧十六毫秒的预算。
 
-共 11 章 · 92 页
+共 11 章 · 122 页
 
 [从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/v7-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
 
