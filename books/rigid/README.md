@@ -4,7 +4,7 @@
 
 本册讲让物体撞在一起。
 
-共 12 章 · 102 页
+共 12 章 · 137 页
 
 [从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/ps-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
 
