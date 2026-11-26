@@ -21,4 +21,4 @@
   - [参考文献](/books/math/appendix/refs.md)
   - [论文时间线](/books/math/appendix/timeline.md)
 
-- <a href="/output/ps-math.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v2-math.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

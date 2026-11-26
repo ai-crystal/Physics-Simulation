@@ -14,14 +14,14 @@
 
 | 册 | 书名 | 一句话 | 页数 | 在线阅读 | PDF |
 | --- | --- | --- | ---: | --- | --- |
-| 01 | [入门篇](books/intro/README.md) | 从抛物线到可微世界 | 109 | [阅读](books/intro/README.md) | <a href="output/ps-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 02 | [数学基础](books/math/README.md) | 描述运动与变形的语言 | 117 | [阅读](books/math/README.md) | <a href="output/ps-math.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 03 | [刚体与碰撞](books/rigid/README.md) | 让物体撞在一起 | 137 | [阅读](books/rigid/README.md) | <a href="output/ps-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 04 | [柔体、布料与断裂](books/deform/README.md) | 会皱、会断、会回弹 | 152 | [阅读](books/deform/README.md) | <a href="output/ps-deform.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 05 | [流体、烟火与水面](books/fluid/README.md) | 把连续介质装进格子 | 110 | [阅读](books/fluid/README.md) | <a href="output/ps-fluid.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 06 | [颗粒、雪与物质点法](books/particle/README.md) | 沙、雪、泡沫与岩浆 | 96 | [阅读](books/particle/README.md) | <a href="output/ps-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 07 | [高性能实现与 GPU 并行](books/gpu/README.md) | 一帧十六毫秒的预算 | 92 | [阅读](books/gpu/README.md) | <a href="output/ps-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
-| 08 | [可微物理与神经模拟](books/diff/README.md) | 让梯度穿过时间 | 103 | [阅读](books/diff/README.md) | <a href="output/ps-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 01 | [入门篇](books/intro/README.md) | 从抛物线到可微世界 | 109 | [阅读](books/intro/README.md) | <a href="output/v1-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 02 | [数学基础](books/math/README.md) | 描述运动与变形的语言 | 117 | [阅读](books/math/README.md) | <a href="output/v2-math.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 03 | [刚体与碰撞](books/rigid/README.md) | 让物体撞在一起 | 137 | [阅读](books/rigid/README.md) | <a href="output/v3-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 04 | [柔体、布料与断裂](books/deform/README.md) | 会皱、会断、会回弹 | 152 | [阅读](books/deform/README.md) | <a href="output/v4-deform.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 05 | [流体、烟火与水面](books/fluid/README.md) | 把连续介质装进格子 | 110 | [阅读](books/fluid/README.md) | <a href="output/v5-fluid.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 06 | [颗粒、雪与物质点法](books/particle/README.md) | 沙、雪、泡沫与岩浆 | 132 | [阅读](books/particle/README.md) | <a href="output/v6-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 07 | [高性能实现与 GPU 并行](books/gpu/README.md) | 一帧十六毫秒的预算 | 92 | [阅读](books/gpu/README.md) | <a href="output/v7-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
+| 08 | [可微物理与神经模拟](books/diff/README.md) | 让梯度穿过时间 | 103 | [阅读](books/diff/README.md) | <a href="output/v8-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载</a> |
 
 ## 怎么读
 

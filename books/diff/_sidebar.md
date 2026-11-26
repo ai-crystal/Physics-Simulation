@@ -21,4 +21,4 @@
   - [参考文献](/books/diff/appendix/refs.md)
   - [论文时间线](/books/diff/appendix/timeline.md)
 
-- <a href="/output/ps-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v8-diff.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

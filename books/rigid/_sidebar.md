@@ -21,4 +21,4 @@
   - [参考文献](/books/rigid/appendix/refs.md)
   - [论文时间线](/books/rigid/appendix/timeline.md)
 
-- <a href="/output/ps-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v3-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

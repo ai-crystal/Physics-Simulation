@@ -21,4 +21,4 @@
   - [参考文献](/books/intro/appendix/refs.md)
   - [论文时间线](/books/intro/appendix/timeline.md)
 
-- <a href="/output/ps-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v1-intro.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

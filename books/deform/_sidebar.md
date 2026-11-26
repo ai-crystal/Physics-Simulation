@@ -21,4 +21,4 @@
   - [参考文献](/books/deform/appendix/refs.md)
   - [论文时间线](/books/deform/appendix/timeline.md)
 
-- <a href="/output/ps-deform.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v4-deform.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

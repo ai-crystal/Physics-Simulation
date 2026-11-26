@@ -4,9 +4,9 @@
 
 本册讲沙、雪、泡沫与岩浆。
 
-共 11 章 · 96 页
+共 11 章 · 132 页
 
-[从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/ps-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
+[从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/v6-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
 
 ## 目录
 

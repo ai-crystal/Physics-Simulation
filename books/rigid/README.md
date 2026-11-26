@@ -6,7 +6,7 @@
 
 共 12 章 · 137 页
 
-[从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/ps-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
+[从第 1 章开始](chapters/ch01.md)　·　<a href="../../output/v3-rigid.pdf" target="_blank" rel="noopener" data-router-ignore>下载本册 PDF</a>
 
 ## 目录
 

@@ -20,4 +20,4 @@
   - [参考文献](/books/particle/appendix/refs.md)
   - [论文时间线](/books/particle/appendix/timeline.md)
 
-- <a href="/output/ps-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v6-particle.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

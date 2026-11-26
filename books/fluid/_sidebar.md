@@ -22,4 +22,4 @@
   - [参考文献](/books/fluid/appendix/refs.md)
   - [论文时间线](/books/fluid/appendix/timeline.md)
 
-- <a href="/output/ps-fluid.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v5-fluid.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>

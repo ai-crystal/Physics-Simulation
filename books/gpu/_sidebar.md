@@ -20,4 +20,4 @@
   - [参考文献](/books/gpu/appendix/refs.md)
   - [论文时间线](/books/gpu/appendix/timeline.md)
 
-- <a href="/output/ps-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
+- <a href="/output/v7-gpu.pdf" target="_blank" rel="noopener" data-router-ignore>下载 PDF</a>
